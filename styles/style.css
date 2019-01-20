@@ -1,0 +1,16 @@
+.stocks-container {
+    height: 720px;
+}
+
+#stocks {
+    height: 100%;
+}
+
+.services .service {
+    height: 475px;
+    padding: 150px 0 0 50px;
+}
+
+.services .service button {
+    width: 150px;
+}
