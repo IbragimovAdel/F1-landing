@@ -1,5 +1,6 @@
 .stocks-container {
     height: 720px;
+    background-color: #0C0C0C;
 }
 
 #stocks {
@@ -8,9 +9,21 @@
 
 .services .service {
     height: 475px;
+    padding: 0;
+}
+
+.services .service .content {
     padding: 150px 0 0 50px;
 }
 
 .services .service button {
     width: 150px;
+}
+
+.services .service i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+    opacity: 0;
 }
