@@ -1,6 +1,5 @@
 .stocks-container {
     height: 720px;
-    background-color: #0C0C0C;
 }
 
 #stocks {
@@ -13,17 +12,35 @@
 }
 
 .services .service .content {
+    height: 100%;
+    position: relative;
     padding: 150px 0 0 50px;
+    z-index: 2; 
 }
 
 .services .service button {
     width: 150px;
 }
 
-.services .service i {
+.service .service:hover > i{
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.services .service:hover .content{
+    visibility: hidden;
+}
+
+.services .service > i {
+    display: block;
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
     cursor: pointer;
-    opacity: 0;
+    z-index: 2;
+}
+
+.container-fluid {
+    padding: 0;
 }

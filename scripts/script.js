@@ -16,16 +16,5 @@ $(function () {
             prevEl: $("#stocks .swiper-button-prev"),
         },
     })
-
-    var service = $('.services .service')
-    service.hover( function () {
-        $(this).find('i').animate({opacity: 1});
-        $(this).find('.content').animate({opacity: 0});
-    },
-    function () {
-        $(this).find('i').animate({opacity: 0});
-        $(this).find('.content').animate({opacity: 1});
-    })
-
-
+    
 })
