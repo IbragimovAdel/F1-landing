@@ -1,3 +1,15 @@
+@media (max-width: 991.98px) { 
+    .header > .form {
+        height: 400px;
+    }
+}
+
+@media (min-width: 992px) {
+    .header > .form {
+        height: 200px;
+    }
+}
+
 .stocks-container {
     height: 720px;
 }
@@ -9,6 +21,8 @@
 .services .service {
     height: 475px;
     padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;    
 }
 
 .services .service .content {
@@ -16,15 +30,17 @@
     position: relative;
     padding: 150px 0 0 50px;
     z-index: 2; 
+    color: white;
 }
 
 .services .service button {
     width: 150px;
+    border: 3px solid white;
 }
 
 .service .service:hover > i{
     cursor: pointer;
-    visibility: hidden;
+    visibility: visible;
 }
 
 .services .service:hover .content{
@@ -39,8 +55,15 @@
     transform: translate(-50%, -50%);
     cursor: pointer;
     z-index: 2;
+    visibility: hidden;
 }
 
-.container-fluid {
-    padding: 0;
+.header > .form {
+    box-shadow: 0 0 20px black inset; 
+    background-color: rgb(15, 16, 17);
+}
+
+.form > .text > h3 {
+    color: white;
+    text-align: center;
 }

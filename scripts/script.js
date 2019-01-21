@@ -16,5 +16,6 @@ $(function () {
             prevEl: $("#stocks .swiper-button-prev"),
         },
     })
-    
+
+    $("#phone").mask('+7 (999) 999-99-99')
 })
