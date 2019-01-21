@@ -1,6 +1,6 @@
 @media (max-width: 991.98px) { 
     .header > .form {
-        height: 400px;
+        height: 450px;
     }
 }
 
@@ -31,20 +31,15 @@
     padding: 150px 0 0 50px;
     z-index: 2; 
     color: white;
+    transition-duration: .5s;
 }
 
 .services .service button {
     width: 150px;
     border: 3px solid white;
 }
-
-.service .service:hover > i{
-    cursor: pointer;
-    visibility: visible;
-}
-
 .services .service:hover .content{
-    visibility: hidden;
+    opacity: 0;
 }
 
 .services .service > i {
@@ -55,7 +50,18 @@
     transform: translate(-50%, -50%);
     cursor: pointer;
     z-index: 2;
-    visibility: hidden;
+}
+
+.services .service .icon-btn {
+    opacity: 0;
+    color: white;
+    position: absolute;
+    transition-duration: .5s;
+    cursor: pointer;
+    z-index: 3;
+}
+.services .service:hover .icon-btn {
+    opacity: 1;
 }
 
 .header > .form {
