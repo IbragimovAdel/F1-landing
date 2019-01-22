@@ -77,3 +77,31 @@
 row {
     width: 100%;
 }
+
+.modal .service1 {
+    background-color: white;
+}
+
+#him {
+    height: 300px;
+}
+
+.him-items {
+    height: 100%;
+}
+
+.him-items item{
+    border: 1px solid black;
+    height: 250px;
+    width: 250px;
+}
+
+.him-slide-content{
+    border: 1px solid black;
+    height: 100%;
+}
+
+#him .swiper-wrapper {
+    width: 90%;
+    margin: 0;
+}
