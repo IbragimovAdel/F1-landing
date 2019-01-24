@@ -1,4 +1,18 @@
-$(function () {
+$(function () {  
+
+    $(".navbar-nav .nav-link").on("click", function () {
+        $(".navbar-nav").find(".active").removeClass("active");
+        $(this).addClass("active");
+    });
+
+    $('.nav-link').on('click',function(e){
+        e.preventDefault();
+        var id = $(this).attr('href');
+        var top = $(id).offset().top;
+        $('html,body').animate({scrollTop: top}, 750);
+        return false;
+    })
+
 
     var stockSwiper = new Swiper($("#stocks"), {
         spaceBetween: 30,
@@ -39,11 +53,6 @@ $(function () {
     $('#service1modal').on('shown.bs.modal', function () {
         himSwiper.update();
     })
-
-    $(".navbar-nav .nav-link").on("click", function () {
-        $(".navbar-nav").find(".active").removeClass("active");
-        $(this).addClass("active");
-    });
 
     $("#phone").mask('+7 (999) 999-99-99')
 })

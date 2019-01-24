@@ -124,6 +124,17 @@ row {
 
 .navbar-nav .active {
     background-color: #1B90A1;
-    border-radius: 20%/50%;
+    border-radius: 25%/60%;
+    box-shadow: 0 0 20px white;
+}
+
+.navbar-nav .nav-link {
+    height: 100%;
+    width: 100%;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #1B90A1;
+    border-radius: 25%/60%;
     box-shadow: 0 0 20px white;
 }
