@@ -34,19 +34,28 @@ $(function () {
 
     var himSwiper = new Swiper($("#him"), {
         slidesPerView: 3,
-        spaceBetween: 30,
+        spaceBetween: 50,
         slidesPerGroup: 3,
         pagination: {
             el: '#him .swiper-pagination',
             clickable: true,
         },
         navigation: {
-            nextEl: '#him .swiper-button-next',
-            prevEl: '#him .swiper-button-prev',
+            nextEl: '.him-items .swiper-button-next-mine',
+            prevEl: '.him-items .swiper-button-prev-mine',
         },
         breakpoints: {
             640: {
-                slidesPerView: 1
+                slidesPerView: 1,
+                slidesPerGroup: 1
+            },
+            800: {
+                slidesPerView: 1,
+                slidesPerGroup: 1
+            },
+            960: {
+                slidesPerView: 1,
+                slidesPerGroup: 1
             }
         }
     });
