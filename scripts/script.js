@@ -17,28 +17,33 @@ $(function () {
         },
     });
 
-    var himSwiper = new Swiper($("#him"),{
+    var himSwiper = new Swiper($("#him"), {
         slidesPerView: 3,
         spaceBetween: 30,
         slidesPerGroup: 3,
         pagination: {
-          el: '#him .swiper-pagination',
-          clickable: true,
+            el: '#him .swiper-pagination',
+            clickable: true,
         },
         navigation: {
-          nextEl: '#him .swiper-button-next',
-          prevEl: '#him .swiper-button-prev',
+            nextEl: '#him .swiper-button-next',
+            prevEl: '#him .swiper-button-prev',
         },
         breakpoints: {
             640: {
                 slidesPerView: 1
             }
         }
-      });
+    });
 
-      $('#service1modal').on('shown.bs.modal',function(){
-          himSwiper.update();
-      })
+    $('#service1modal').on('shown.bs.modal', function () {
+        himSwiper.update();
+    })
 
-      $("#phone").mask('+7 (999) 999-99-99')
+    $(".navbar-nav .nav-link").on("click", function () {
+        $(".navbar-nav").find(".active").removeClass("active");
+        $(this).addClass("active");
+    });
+
+    $("#phone").mask('+7 (999) 999-99-99')
 })

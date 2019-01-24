@@ -121,3 +121,9 @@ row {
 .top-menu {
     height: 100px;
 }
+
+.navbar-nav .active {
+    background-color: #1B90A1;
+    border-radius: 20%/50%;
+    box-shadow: 0 0 20px white;
+}
