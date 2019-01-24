@@ -18,6 +18,66 @@
     height: 100%;
 }
 
+#stocks .swiper-slide {
+    color: white;
+    background-position-x: right;
+    background-repeat: no-repeat;
+}
+
+#stocks .swiper-slide > .row{
+    background-color: rgba(0,0,0,0.8);
+    font-size: 20px;
+}
+
+#stocks .swiper-pagination-bullet {
+    background-color: black;
+    border: 1px solid white;
+}
+
+#stocks .swiper-pagination-bullet {
+    background-color: white;
+    border: 1px solid white;
+}
+
+.stocks-row i {
+    color: white;
+    cursor: pointer;
+}
+
+.stocks-row .swiper-button-prev-mine:focus, .stocks-row .swiper-button-next-mine:focus {
+    outline: none;
+}
+
+.stocks-row .swiper-button-disabled i {
+    color: grey !important;
+    cursor: pointer;
+}
+
+.timer > span {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.timer > div {
+    font-size: 20px;
+    text-align: center;
+}
+
+.swiper-slide .price {
+    font-size: 30px;
+}
+
+.swiper-slide .price_old {
+    color: grey;
+    text-decoration: line-through;
+}
+
+.swiper-slide a{
+    background-color: #1B90A1;
+    width: 150px;
+    color: white;
+}
+
 .services .service {
     height: 475px;
     padding: 0;

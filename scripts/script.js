@@ -5,7 +5,7 @@ $(function () {
         $(this).addClass("active");
     });
 
-    $('.nav-link').on('click',function(e){
+    $('.nav-link, .swiper-slide a').on('click',function(e){
         e.preventDefault();
         var id = $(this).attr('href');
         var top = $(id).offset().top;
@@ -15,6 +15,7 @@ $(function () {
 
 
     var stockSwiper = new Swiper($("#stocks"), {
+        slidesPerView: 1,
         spaceBetween: 30,
         centeredSlides: true,
         autoplay: {
@@ -26,8 +27,8 @@ $(function () {
             clickable: true,
         },
         navigation: {
-            nextEl: $("#stocks .swiper-button-next"),
-            prevEl: $("#stocks .swiper-button-prev"),
+            nextEl: $(".stocks-row .swiper-button-next-mine"),
+            prevEl: $(".stocks-row .swiper-button-prev-mine"),
         },
     });
 
@@ -49,6 +50,13 @@ $(function () {
             }
         }
     });
+
+    $('#timer').countdown("2019/02/01", function(e) {
+        $('#timer .days').text(e.strftime('%w')*7+Number(e.strftime('%d')));
+        $('#timer .hrs').text(e.strftime('%H'));
+        $('#timer .mins').text(e.strftime('%M'));
+        $('#timer .secs').text(e.strftime('%S'));
+      });
 
     $('#service1modal').on('shown.bs.modal', function () {
         himSwiper.update();
