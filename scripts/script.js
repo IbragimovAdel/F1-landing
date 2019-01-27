@@ -145,7 +145,6 @@ $(function () {
     })
 
     $("#basketOrderBtn").on('click',function(){
-        console.log(order.toString())
     })
 
     ymaps.ready(init);
