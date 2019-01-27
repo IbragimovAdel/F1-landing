@@ -1,6 +1,13 @@
+*:focus{
+    outline: none;
+}
+
 @media (max-width: 991.98px) { 
     .header > .form {
         height: 450px;
+    }
+    #map {
+        height: 300px !important;
     }
 }
 
@@ -217,4 +224,57 @@ row {
 
 #him .item h4, #him .item h5 {
     height: 70px;
+}
+
+.devices-block {
+    background-color: rgb(15, 16, 17);
+    color: white;
+}
+
+.pagination-btn {
+    cursor: pointer;
+}
+
+.photos-block {
+    background-color: rgb(15, 16, 17);
+    color: white;
+}
+
+#photo-slider .img{
+    border: 5px solid black;
+}
+
+#photo-slider-nav .slide img{
+    height: 100px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.header .basket:hover {
+    cursor: pointer;
+    transform: rotate(10deg);
+}
+
+#map {
+    height: 500px;
+    border: 1px solid white;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+}
+
+.address {
+    font-size: 30px;
+}
+
+#basket li i {
+    float: right;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+#basket li {
 }
