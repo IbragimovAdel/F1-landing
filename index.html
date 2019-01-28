@@ -243,13 +243,13 @@
                 <form action="" class="row col-lg-8 col-sm-12 justify-content-center">
                     <div class="row col-12 justify-content-center">
                         <div class="col-lg-3 col-sm-12 my-lg-0 my-3">
-                            <input type="text" class="form-control" placeholder="Ваше имя">
+                            <input type="text" class="form-control" placeholder="Ваше имя" id="name">
                         </div>
                         <div class="col-lg-3 col-sm-12 my-lg-0 my-3">
-                            <input id='phone' type="text" class="form-control" placeholder="Ваш номер телефона">
+                            <input id='phone' type="text" class="form-control" placeholder="Ваш номер телефона" id="phone">
                         </div>
                         <div class="col-lg-3 col-sm-12 my-lg-0 my-3">
-                            <input type="text" class="form-control" placeholder="Марка вашего автомобиля">
+                            <input type="text" class="form-control" placeholder="Марка вашего автомобиля" id="model">
                         </div>
                         <div class="col-lg-3-col-sm-12 my-lg-0 my-3">
                             <button type="submit" class="btn btn-primary">Проконсультироваться</button>
@@ -499,6 +499,7 @@
         </section>
         <!--Modals-->
         <section class="modals">
+            <!--HimModal-->
             <div class="modal fade" id="service1modal">
                 <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
                     <div class="modal-content service1">
@@ -648,6 +649,7 @@
                     </div>
                 </div>
             </div>
+            <!--BasketModal-->
             <div class="modal fade" id="basketModal">
                 <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
                     <div class="modal-content">
@@ -679,6 +681,7 @@
         </section>
     </div>
 
+    <script src="./scripts/sendMessage.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="./scripts/jquery.countdown.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"

@@ -227,7 +227,7 @@ row {
 }
 
 .devices-block {
-    background-color: rgb(15, 16, 17);
+    background-image: url('../resources/img/devices-background.jpg');
     color: white;
 }
 
