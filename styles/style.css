@@ -228,6 +228,8 @@ row {
 
 .devices-block {
     background-image: url('../resources/img/devices-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
 }
 
