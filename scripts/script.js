@@ -81,10 +81,27 @@ $(function () {
         nextArrow: $('#device-slider-1-right'),
     });
 
+    var devSlider2 = $("#device-slider-2");
+    devSlider2.on('afterChange', function (slick, currentSlide) {
+        $('.device-slider-2-pagination .current').text(devSlider2.slick('slickCurrentSlide') + 1);
+    })
+    devSlider2.slick({
+        prevArrow: $('#device-slider-2-left'),
+        nextArrow: $('#device-slider-2-right'),
+    });
+
+    var devSlider3 = $("#device-slider-3");
+    devSlider3.on('afterChange', function (slick, currentSlide) {
+        $('.device-slider-3-pagination .current').text(devSlider3.slick('slickCurrentSlide') + 1);
+    })
+    devSlider3.slick({
+        prevArrow: $('#device-slider-3-left'),
+        nextArrow: $('#device-slider-3-right'),
+    });
+
     var photoSlider = $("#photo-slider");
     photoSlider.slick({
-        nextArrow: $("#photo-slider-right"),
-        prevArrow: $("#photo-slider-left"),
+        arrows: false,
         asNavFor: photoSliderNav,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -96,7 +113,8 @@ $(function () {
         slidesToScroll: 1,
         asNavFor: photoSlider,
         centerMode: true,
-        arrows: false,
+        nextArrow: $("#photo-slider-right"),
+        prevArrow: $("#photo-slider-left"),
         centerPadding: 0,
         focusOnSelect: true,
         responsive: [
