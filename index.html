@@ -238,16 +238,16 @@
                     <h3>Заполните форму и получите
                         <u>бесплатную</u> консультацию</h3>
                 </div>
-                <form action="" class="row col-lg-8 col-sm-12 justify-content-center">
+                <form action="./php/sendMessage.php" method="POST" class="row col-lg-8 col-sm-12 justify-content-center">
                     <div class="row col-12 justify-content-center">
                         <div class="col-lg-3 col-sm-12 my-lg-0 my-3">
-                            <input type="text" class="form-control" placeholder="Ваше имя" id="name" required>
+                            <input type="text" class="form-control" placeholder="Ваше имя" id="name" name="user_name" required>
                         </div>
                         <div class="col-lg-3 col-sm-12 my-lg-0 my-3">
-                            <input id='phone' type="text" class="form-control" placeholder="Ваш номер телефона" id="phone" required>
+                            <input id='phone' type="text" class="form-control" placeholder="Ваш номер телефона" name="user_phone" id="phone" required>
                         </div>
                         <div class="col-lg-3 col-sm-12 my-lg-0 my-3">
-                            <input type="text" class="form-control" placeholder="Марка вашего автомобиля" id="model" required>
+                            <input type="text" class="form-control" placeholder="Марка вашего автомобиля" name="user_carmodel" id="model" required>
                         </div>
                         <div class="col-lg-3-col-sm-12 my-lg-0 my-3">
                             <button type="submit" class="btn btn-primary">Проконсультироваться</button>
@@ -1637,7 +1637,6 @@ POL STAR нежно чистит и обволакивает материалы 
         </section>
     </div>
 
-    <script src="./scripts/sendMessage.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="./scripts/jquery.countdown.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
