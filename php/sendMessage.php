@@ -3,16 +3,22 @@
 $name = $_POST['user_name'];
 $phone = $_POST['user_phone'];
 $carmodel = $_POST['user_carmodel'];
+$order = $_POST['order'];
 
 $token = "733330102:AAGZ5YbIxj7umx_pv9q3GCUYJmBJGH-jCeo";
 $chat_id = "259993783";
 
 $txt = "";
 
+if($order === ""){
+    $order = "нет";
+}
+
 $arr = array(
     'Имя: ' => $name,
     'Телефон: ' => $phone,
-    'Марка автомобиля: ' => $carmodel
+    'Марка автомобиля: ' => $carmodel,
+    'Заказ: ' => $order
 );
 
 foreach($arr as $key => $value){

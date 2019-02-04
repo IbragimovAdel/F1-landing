@@ -192,6 +192,7 @@ row {
     background-color: #1B90A1;
     border-radius: 25%/60%;
     box-shadow: 0 0 20px white;
+    border: none;
 }
 
 .nav-item {
@@ -201,6 +202,7 @@ row {
 .navbar-nav .nav-link {
     height: 100%;
     width: 100%;
+    border-bottom: 1px solid white;
 }
 
 .navbar-nav .nav-link:hover {
@@ -281,10 +283,15 @@ row {
 #basket li {
 }
 
-.header {
-    background-color: black;
+.header .menu{
+    background-color: rgb(15, 16, 17);
+    box-shadow: 0 0 10px rgba(255,255,255,0.75);
 }
 
 .devices-block img {
     background-image: url('../resources/img/devices/btl.png');
+}
+
+.stocks-slider {
+    background-color: rgba(0,0,0,1);
 }

@@ -29,7 +29,7 @@
         <!--Header-->
         <section class="header">
             <!--NavBar-->
-            <nav class="navbar navbar-expand-lg navbar-dark static-top">
+            <nav class="navbar navbar-expand-lg navbar-dark static-top menu">
                 <div class="container-fluid">
                     <a href="#" class="navbar-brand">
                         <img src="./resources/img/logo.png" alt="" style="height: 75px;">
@@ -81,7 +81,7 @@
                 </div>
             </nav>
             <!--Slider-->
-            <div class="container-fluid justify-content-center stocks-row mx-auto">
+            <div class="container-fluid justify-content-center stocks-row mx-auto stocks-slider pt-5">
                 <div class="row">
                     <div class="col-lg-2 d-none d-md-none d-lg-block col-sm-0 swiper-button-prev-mine align-self-center">
                         <i class="fas fa-angle-left fa-5x float-lg-right"></i>
@@ -126,7 +126,7 @@
                                                     26.000 руб
                                                 </div>
                                                 <div class="col-12 text-center my-3">
-                                                    <a href="#form" class="btn">Записаться</a>
+                                                    <a href="#form" class="btn stock-btn" data-name="Акция. Керамика H9 2 слоя.">Записаться</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -169,7 +169,7 @@
                                                     4.600 руб
                                                 </div>
                                                 <div class="col-12 text-center my-3">
-                                                    <a href="#form" class="btn">Записаться</a>
+                                                    <a href="#form" class="btn stock-btn" data-name="Акция. Полная химчистка салона.">Записаться</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -212,7 +212,7 @@
                                                     от 5.000 руб
                                                 </div>
                                                 <div class="col-12 text-center my-3">
-                                                    <a href="#form" class="btn">Записаться</a>
+                                                    <a href="#form" class="btn stock-btn" data-name="Акция. Глубокая полировка кузова.">Записаться</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -238,7 +238,7 @@
                     <h3>Заполните форму и получите
                         <u>бесплатную</u> консультацию</h3>
                 </div>
-                <form action="./php/sendMessage.php" method="POST" class="row col-lg-8 col-sm-12 justify-content-center">
+                <form action="./php/sendMessage.php" method="POST" class="row col-lg-8 col-sm-12 justify-content-center" id="main-form">
                     <div class="row col-12 justify-content-center">
                         <div class="col-lg-3 col-sm-12 my-lg-0 my-3">
                             <input type="text" class="form-control" placeholder="Ваше имя" id="name" name="user_name" required>
@@ -252,6 +252,7 @@
                         <div class="col-lg-3-col-sm-12 my-lg-0 my-3">
                             <button type="submit" class="btn btn-primary">Проконсультироваться</button>
                         </div>
+                        <input type="hidden" name="order" value="" id="order-input">
                     </div>
                 </form>
             </div>
@@ -1403,6 +1404,7 @@
                             <button type="submit" class="btn btn-primary">Проконсультироваться</button>
                         </div>
                     </div>
+                    <input type="hidden" name="order" value="" id="order-input">
                 </form>
             </div>
         </section>

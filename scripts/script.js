@@ -8,10 +8,14 @@ $(function () {
     $('.nav-link, .swiper-slide a').on('click', function (e) {
         e.preventDefault();
         var id = $(this).attr('href');
+        sliding(id);
+    })
+
+    function sliding(id){
         var top = $(id).offset().top;
         $('html,body').animate({ scrollTop: top }, 750);
         return false;
-    })
+    }
 
     var stockSwiper = new Swiper($("#stocks"), {
         slidesPerView: 1,
@@ -178,4 +182,13 @@ $(function () {
 
         map.geoObjects.add(mark);
     }
+
+    $('form').on('submit',function(e){
+        $(this).find("#order-input").val(order.toString());
+    })
+
+    $('#basketOrderBtn').on('click',function(){
+        $('#basketModal').modal('hide');
+        sliding("#form");
+    })
 })
