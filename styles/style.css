@@ -3,7 +3,7 @@
 }
 
 @media (max-width: 991.98px) { 
-    .header > .form {
+    .header > .form, section > .form {
         height: 450px;
     }
     #map {
@@ -12,7 +12,7 @@
 }
 
 @media (min-width: 992px) {
-    .header > .form {
+    .header > .form, section > .form{
         height: 200px;
     }
 }
@@ -143,7 +143,7 @@
     opacity: 1;
 }
 
-.header > .form {
+.header > .form, section > .form {
     box-shadow: 0 0 20px black inset; 
     background-color: rgb(15, 16, 17);
 }
