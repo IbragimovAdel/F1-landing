@@ -284,3 +284,7 @@ row {
 .header {
     background-color: black;
 }
+
+.devices-block img {
+    background-image: url('../resources/img/devices/btl.png');
+}
