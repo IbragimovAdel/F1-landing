@@ -19,8 +19,9 @@ $(function () {
 
     var stockSwiper = new Swiper($("#stocks"), {
         slidesPerView: 1,
-        spaceBetween: 30,
+        spaceBetween: 0,
         centeredSlides: true,
+        loop: true,
         autoplay: {
             delay: 5000,
             disableOnInteraction: false,

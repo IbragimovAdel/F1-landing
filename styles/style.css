@@ -291,6 +291,7 @@ row {
     box-shadow: 0 0 10px rgba(255,255,255,0.75);
 }
 
+
 .devices-block img, .stocks-slider .stock-slide-content {
     background-image: url('../resources/img/devices/btl.png');
     background-repeat: no-repeat;
@@ -329,16 +330,16 @@ row {
 }
 
 .about .pic3 {
-    background-image: url('../resources/img/step_03.png');
+    background-image: url('../resources/img/step_01.png');
 }
 
 .about .pic4 {
     margin-top: 100px;
-    background-image: url('../resources/img/step_04.png');
+    background-image: url('../resources/img/step_02.png');
 }
 
 .about .pic5 {
-    background-image: url('../resources/img/step_05.png');
+    background-image: url('../resources/img/step_01.png');
 }
 
 .el {
