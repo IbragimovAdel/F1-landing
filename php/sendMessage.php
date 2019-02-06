@@ -29,10 +29,10 @@ mail("ibragimovadel2001@gmail.com","Заявка с сайта","Имя: ".$name
 $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
 
 if($sendToTelegram){
-    header('Location: index.html');
+    header('Location: ../index.html');
     return true;
 } else {
-    header('Location: index.html');
+    header('Location: ../index.html');
     return false;
 }
 

@@ -288,10 +288,68 @@ row {
     box-shadow: 0 0 10px rgba(255,255,255,0.75);
 }
 
-.devices-block img {
+.devices-block img, .stocks-slider .stock-slide-content {
     background-image: url('../resources/img/devices/btl.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 30%;
 }
 
 .stocks-slider {
     background-color: rgba(0,0,0,1);
+}
+
+.about {
+    color: white;
+    background-color: black;
+    padding-bottom: 75px;
+}
+
+.about .pic {
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 23px;
+    padding-left: 2px;
+    font-size: 36px;
+}
+
+.about .pic1 {
+    background-image: url('../resources/img/step_01.png');
+}
+
+.about .pic2 {
+    margin-top: 100px;
+    background-image: url('../resources/img/step_02.png');
+}
+
+.about .pic3 {
+    background-image: url('../resources/img/step_03.png');
+}
+
+.about .pic4 {
+    margin-top: 100px;
+    background-image: url('../resources/img/step_04.png');
+}
+
+.about .pic5 {
+    background-image: url('../resources/img/step_05.png');
+}
+
+.el {
+    height: 250px;
+}
+
+.el .text {
+    font-size: 1.1em;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 5px black;
+}
+
+.stock-btn {
+    text-shadow: none;
 }

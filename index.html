@@ -29,7 +29,7 @@
         <!--Header-->
         <section class="header">
             <!--NavBar-->
-            <nav class="navbar navbar-expand-lg navbar-dark static-top menu">
+            <nav class="navbar navbar-expand-lg navbar-dark static-top menu text-shadow">
                 <div class="container-fluid">
                     <a href="#" class="navbar-brand">
                         <img src="./resources/img/logo.png" alt="" style="height: 75px;">
@@ -93,7 +93,7 @@
                                 <div class="swiper-slide item mx-auto" style="background-image: url(./resources/img/stock1.jpg)">
                                     <div class="row col-lg-5 h-100 ml-3">
                                         <div class="align-self-center">
-                                            <div class="row col-12 justify-content-center align-items-center">
+                                            <div class="row col-12 justify-content-center align-items-center stock-slide-content text-shadow">
                                                 <div class="col-12 text-center">
                                                     Доконца акции
                                                     <br>осталось:
@@ -126,7 +126,7 @@
                                                     26.000 руб
                                                 </div>
                                                 <div class="col-12 text-center my-3">
-                                                    <a href="#form" class="btn stock-btn" data-name="Акция. Керамика H9 2 слоя.">Записаться</a>
+                                                    <a href="" class="btn stock-btn" data-name="Акция. Керамика H9 2 слоя." data-toggle="modal" data-target="#formModal">Записаться</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -136,7 +136,7 @@
                                 <div class="swiper-slide item mx-auto" style="background-image: url(./resources/img/stock2.jpg)">
                                     <div class="row col-lg-5 h-100 ml-3">
                                         <div class="align-self-center">
-                                            <div class="row col-12 justify-content-center align-items-center">
+                                            <div class="row col-12 justify-content-center align-items-center stock-slide-content text-shadow">
                                                 <div class="col-12 text-center">
                                                     Доконца акции
                                                     <br>осталось:
@@ -169,7 +169,7 @@
                                                     4.600 руб
                                                 </div>
                                                 <div class="col-12 text-center my-3">
-                                                    <a href="#form" class="btn stock-btn" data-name="Акция. Полная химчистка салона.">Записаться</a>
+                                                    <a href="" class="btn stock-btn" data-name="Акция. Полная химчистка салона." data-toggle="modal" data-target="#formModal">Записаться</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -179,7 +179,7 @@
                                 <div class="swiper-slide item mx-auto" style="background-image: url(./resources/img/stock3.jpg)">
                                     <div class="row col-lg-5 h-100 ml-3">
                                         <div class="align-self-center">
-                                            <div class="row col-12 justify-content-center align-items-center ml-3">
+                                            <div class="row col-12 justify-content-center align-items-center ml-3 stock-slide-content text-shadow">
                                                 <div class="col-12 text-center">
                                                     Доконца акции
                                                     <br>осталось:
@@ -212,7 +212,7 @@
                                                     от 5.000 руб
                                                 </div>
                                                 <div class="col-12 text-center my-3">
-                                                    <a href="#form" class="btn stock-btn" data-name="Акция. Глубокая полировка кузова.">Записаться</a>
+                                                    <a href="" class="btn stock-btn" data-name="Акция. Глубокая полировка кузова." data-toggle="modal" data-target="#formModal">Записаться</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -255,6 +255,68 @@
                         <input type="hidden" name="order" value="" id="order-input">
                     </div>
                 </form>
+            </div>
+            <!--About-->
+            <div class="about container-fluid">
+                <div class="row justify-content-center">
+                    <h1 class="text-center my-3">
+                        Максимально качественный сервис,
+                        <br>
+                        затрагивающий каждый сантиметр автомобиля.
+                    </h1>
+                </div>
+                <div class="row justify-content-center">
+                    <p class="text-center">
+                        Обратившись к нам, вы избавитесь от царапин на кузове, защитите свое авто от<br>воздействия ультрафиолетового излучения и выгорания краски, от коррозии,<br>мелких царапин и прочих негативных факторов, которые воздействуют на<br>автомобиль в процессе эксплуатации.
+                    </p>
+                </div>
+                <div class="row justify-content-center mt-5">
+                    <h3 class="text-center">Как мы работаем?</h3>
+                </div>
+                <div class="row w100 m-0 justify-content-center">
+                    <div class="row m-0 col-lg-8 col-sm-12">
+                        <div class="col-lg-2 col-sm-12 m-auto el">
+                            <div class="pic pic1">
+                                1
+                            </div>
+                            <div class="text">
+                                <p class="text-center">Вы оставляете <a href="">заявку</a></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-12 m-auto el">
+                            <div class="pic pic2">
+                                2
+                            </div>
+                            <div class="text">
+                                <p class="text-center">Наш оператор связывается с вами</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-12 m-auto el">
+                            <div class="pic pic3">
+                                3
+                            </div>
+                            <div class="text">
+                                <p class="text-center">Вы приезжаете в наш сервис</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-12 m-auto el">
+                            <div class="pic pic4">
+                                4
+                            </div>
+                            <div class="text">
+                                <p class="text-center">Мы проводим полный цикл детейлинга</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-12 m-auto el">
+                            <div class="pic pic5">
+                                5
+                            </div>
+                            <div class="text">
+                                <p class="text-center">Автомобиль готов! детейлинг завершен</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <!--Services-->
@@ -345,7 +407,7 @@
             </div>
         </section>
         <!--Devices-->
-        <section class="devices-block justify-content-center" id="devices">
+        <section class="devices-block justify-content-center text-shadow" id="devices">
             <div class="container col-lg-8 col-sm-12">
                 <div class="row py-5">
                     <h1 class="col-12 text-center">Только лучшие средства</h1>
@@ -1450,13 +1512,17 @@
                                     </div>
                                     <div class="row col-10 align-items-center my-1">
                                         <i class="fas fa-angle-right"></i>
-                                        <p class="ml-1 m-0 text-decoration-underline" role="button" data-toggle="collapse" data-target="#s1p2" style="cursor:pointer">Чем делаем?</p>
-                                        <p id="s1p2" class="collapse mx-3 my-0">Какой-то текст Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                        <p class="ml-1 m-0 text-decoration-underline" role="button" data-toggle="collapse" data-target="#s1p2" style="cursor:pointer">Сколько времени длится комплексная химчистка?</p>
+                                        <p id="s1p2" class="collapse mx-3 my-0">Химчистка занимает от 12 часов, все зависит от загрязнений! После химчистки вы сразу можете сеть за руль и
+                                                поехать по своим делам. Мокро не будет. Хорошее настроение прилагается.</p>
                                     </div>
                                     <div class="row col-10 align-items-center my-1">
                                         <i class="fas fa-angle-right"></i>
                                         <p class="ml-1 m-0 text-decoration-underline" role="button" data-toggle="collapse" data-target="#s1p3" style="cursor:pointer">Что входит в стоимость?</p>
-                                        <p id="s1p3" class="collapse mx-3 my-0">Какой-то текст Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                        <p id="s1p3" class="collapse mx-3 my-0">Мы честно и открыто говорим, что в сезонную химчистку входит всё, кроме
+                                                "Чистки и защиты кожаного салона (с применение специальных составов)" - кожаные элементы
+                                                оплачиваются дополнительно.
+                                                Кондиционеры кожи, пластика и защитные пропитки салона заказываются отдельно. </p>
                                     </div>
                                 </div>
                                 <div class="row him-items">
@@ -1468,8 +1534,8 @@
                                             <div class="swiper-slide item">
                                                 <div class="him-slide-content p-5">
                                                     <h4>Химчистка полная</h4>
-                                                    <p>Цена: 6.000 руб.</p>
-                                                    <p>Время: </p>
+                                                    <p>(Комплексная мойка в подарок)</p>
+                                                    <p>Цена: 4.600 руб.</p>
                                                     <button class="btn btn-primary order-btn" data-name="Химчиска полная">Добавить в корзину</button>
                                                 </div>
                                             </div>
@@ -1477,7 +1543,8 @@
                                                 <div class="him-slide-content p-5">
                                                     <h4>1 сиденье</h4>
                                                     <p>Цена: 500 руб.</p>
-                                                    <p>Время: </p>
+                                                    <br>
+                                                    <br>
                                                     <button class="btn btn-primary order-btn" data-name="Химчистка. 1 сиденье">Добавить в корзину</button>
                                                 </div>
                                             </div>
@@ -1485,7 +1552,8 @@
                                                 <div class="him-slide-content p-5">
                                                     <h4>4 сиденья</h4>
                                                     <p>Цена: 1.500 руб.</p>
-                                                    <p>Время: </p>
+                                                    <br>
+                                                    <br>
                                                     <button class="btn btn-primary order-btn" data-name="Химчистка. 4 сиденья">Добавить в корзину</button>
                                                 </div>
                                             </div>
@@ -1493,7 +1561,8 @@
                                                 <div class="him-slide-content p-5">
                                                     <h4>Потолок</h4>
                                                     <p>Цена: 2.000 руб.</p>
-                                                    <p>Время: </p>
+                                                    <br>
+                                                    <br>
                                                     <button class="btn btn-primary order-btn" data-name="Химчистка. Потолок">Добавить в корзину</button>
                                                 </div>
                                             </div>
@@ -1501,7 +1570,8 @@
                                                 <div class="him-slide-content p-5">
                                                     <h4>Пол</h4>
                                                     <p>Цена: 2.000 руб.</p>
-                                                    <p>Время: </p>
+                                                    <br>
+                                                    <br>
                                                     <button class="btn btn-primary order-btn" data-name="Химчистка. Пол">Добавить в корзину</button>
                                                 </div>
                                             </div>
@@ -1509,7 +1579,8 @@
                                                 <div class="him-slide-content p-5">
                                                     <h4>Пол (1 место)</h4>
                                                     <p>Цена: 500 руб.</p>
-                                                    <p>Время: </p>
+                                                    <br>
+                                                    <br>
                                                     <button class="btn btn-primary order-btn" data-name="Химчистка. Пол (1 место)">Добавить в корзину</button>
                                                 </div>
                                             </div>
@@ -1517,7 +1588,8 @@
                                                 <div class="him-slide-content p-5">
                                                     <h4>Дверь (1 шт.)</h4>
                                                     <p>Цена: 250 руб.</p>
-                                                    <p>Время: </p>
+                                                    <br>
+                                                    <br>
                                                     <button class="btn btn-primary order-btn" data-name="Химчистка. Дверь (1 шт.)">Добавить в корзину</button>
                                                 </div>
                                             </div>
@@ -1525,7 +1597,8 @@
                                                 <div class="him-slide-content p-5">
                                                     <h4>Багажник</h4>
                                                     <p>Цена: 800 руб.</p>
-                                                    <p>Время: </p>
+                                                    <br>
+                                                    <br>
                                                     <button class="btn btn-primary order-btn" data-name="Химчистка. Багажник">Добавить в корзину</button>
                                                 </div>
                                             </div>
@@ -1533,7 +1606,8 @@
                                                 <div class="him-slide-content p-5">
                                                     <h4>Детское кресло</h4>
                                                     <p>Цена: 350 руб.</p>
-                                                    <p>Время: </p>
+                                                    <br>
+                                                    <br>
                                                     <button class="btn btn-primary order-btn" data-name="Химчистка. Детское кресло">Добавить в корзину</button>
                                                 </div>
                                             </div>
@@ -1541,7 +1615,8 @@
                                                 <div class="him-slide-content p-5">
                                                     <h4>Коврик</h4>
                                                     <p>Цена: 50 руб.</p>
-                                                    <p>Время: </p>
+                                                    <br>
+                                                    <br>
                                                     <button class="btn btn-primary order-btn" data-name="Химчистка. Коврик">Добавить в корзину</button>
                                                 </div>
                                             </div>
@@ -1549,7 +1624,8 @@
                                                 <div class="him-slide-content p-5">
                                                     <h4>Сушка салона</h4>
                                                     <p>Цена: 400 руб.</p>
-                                                    <p>Время: </p>
+                                                    <br>
+                                                    <br>
                                                     <button class="btn btn-primary order-btn" data-name="Химчистка. Сушка салона">Добавить в корзину</button>
                                                 </div>
                                             </div>
@@ -1557,7 +1633,8 @@
                                                 <div class="him-slide-content p-5">
                                                     <h5>Нано обработка обшивки сидений</h5>
                                                     <p>Цена: 2.000 руб.</p>
-                                                    <p>Время: </p>
+                                                    <br>
+                                                    <br>
                                                     <button class="btn btn-primary order-btn" data-name="Химчистка. Нано обработка обшивки сидений">Добавить в корзину</button>
                                                 </div>
                                             </div>
@@ -1599,6 +1676,42 @@
                         </div>
                         <div class="modal-footer bg-dark">
                             <button class="btn btn-light" disabled id="basketOrderBtn">Оставить заявку</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--FormModal-->
+            <div class="modal fade" id="formModal">
+                <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header bg-dark text-white">
+                            <div class="modal-title">
+                                <h3 class="text-center">Запись</h3>
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true" class="text-white">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="conteiner-fluid">
+                                <form action="./php/sendMessage.php" method="POST" class="p-0 row col-12 justify-content-center m-auto" id="main-form">
+                                    <div class="row col-12 justify-content-center p-0">
+                                        <div class="row my-3 w-100">
+                                            <input type="text" class="form-control" placeholder="Ваше имя" id="name" name="user_name" required>
+                                        </div>
+                                        <div class="row my-3 w-100">
+                                            <input id='phone' type="text" class="form-control" placeholder="Ваш номер телефона" name="user_phone" id="phone" required>
+                                        </div>
+                                        <div class="row my-3 w-100">
+                                            <input type="text" class="form-control" placeholder="Марка вашего автомобиля" name="user_carmodel" id="model" required>
+                                        </div>
+                                        <div class="row my-3">
+                                            <button type="submit" class="btn btn-primary">Проконсультироваться</button>
+                                        </div>
+                                        <input type="hidden" name="order" value="Акция." id="order-input">
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>

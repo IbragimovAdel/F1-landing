@@ -5,7 +5,7 @@ $(function () {
         $(this).addClass("active");
     });
 
-    $('.nav-link, .swiper-slide a').on('click', function (e) {
+    $('.nav-link').on('click', function (e) {
         e.preventDefault();
         var id = $(this).attr('href');
         sliding(id);
@@ -63,7 +63,7 @@ $(function () {
         }
     });
 
-    $('#timer').countdown("2019/02/01", function (e) {
+    $('#timer').countdown("2019/03/01", function (e) {
         $('#timer .days').text(e.strftime('%w') * 7 + Number(e.strftime('%d')));
         $('#timer .hrs').text(e.strftime('%H'));
         $('#timer .mins').text(e.strftime('%M'));
@@ -73,8 +73,9 @@ $(function () {
     $('#service1modal').on('shown.bs.modal', function () {
         himSwiper.update();
     })
-
-    $("#phone").mask('+7 (999) 999-99-99')
+    $('#formModal').on('shown.bs.modal',function(){
+        $("#formModal #phone").mask('+7 (999) 999-99-99')
+    })
 
     var devSlider1 = $("#device-slider-1");
     devSlider1.on('afterChange', function (slick, currentSlide) {
@@ -137,7 +138,7 @@ $(function () {
     $(".order-btn").on('click', function () {
         var name = $(this).data('name')
         order.push(name)
-        alert("Успешно добавлено в корзину")
+        if($(this).attr('class').includes('order-btn')) alert("Успешно добавлено в корзину")
 
         var deleteBtn = $("<i class=\"fas fa-minus mx-3 p-1 basketDeleteBtn\">")
 
@@ -191,4 +192,6 @@ $(function () {
         $('#basketModal').modal('hide');
         sliding("#form");
     })
+
+    $("#phone").mask('+7 (999) 999-99-99')
 })
