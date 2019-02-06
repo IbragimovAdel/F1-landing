@@ -145,7 +145,7 @@
 
 .header > .form, section > .form {
     box-shadow: 0 0 20px black inset; 
-    background-color: rgb(15, 16, 17);
+    background-color: #030406;
 }
 
 .form > .text > h3 {
@@ -240,9 +240,12 @@ row {
 }
 
 .photos-block {
-    background-color: rgb(15, 16, 17);
+    background-color: #030406;
     color: white;
 }
+/*
+    background-color: rgb(15, 16, 17);
+*/
 
 #photo-slider .img{
     border: 5px solid black;
