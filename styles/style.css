@@ -357,3 +357,8 @@ row {
 .stock-btn {
     text-shadow: none;
 }
+
+#stocks .slide3 {
+    background-size: cover;
+    background-position-x: 200px;
+}
