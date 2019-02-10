@@ -5,7 +5,7 @@ $(function () {
         $(this).addClass("active");
     });
 
-    $('.nav-link').on('click', function (e) {
+    $('.nav-link, .about a').on('click', function (e) {
         e.preventDefault();
         var id = $(this).attr('href');
         sliding(id);

@@ -280,7 +280,7 @@
                                 1
                             </div>
                             <div class="text">
-                                <p class="text-center">Вы оставляете <a href="">заявку</a></p>
+                                <p class="text-center">Вы оставляете <a href="#form2">заявку</a></p>
                             </div>
                         </div>
                         <div class="col-lg-2 col-sm-12 m-auto el">
@@ -1451,7 +1451,7 @@
                     <h3>Заполните форму и получите
                         <u>бесплатную</u> консультацию</h3>
                 </div>
-                <form action="./php/sendMessage.php" method="POST" class="row col-lg-8 col-sm-12 justify-content-center">
+                <form action="./php/sendMessage.php" method="POST" class="row col-lg-8 col-sm-12 justify-content-center" id="form2">
                     <div class="row col-12 justify-content-center">
                         <div class="col-lg-3 col-sm-12 my-lg-0 my-3">
                             <input type="text" class="form-control" placeholder="Ваше имя" id="name" name="user_name" required>
@@ -1490,7 +1490,7 @@
             <div class="modal fade" id="service1modal">
                 <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
                     <div class="modal-content service1">
-                        <div class="modal-header bg-dark text-white">
+                        <div class="modal-header text-white">
                             <div class="modal-title">
                                 <h3>Химчистка</h3>
                             </div>
@@ -1501,7 +1501,7 @@
                         <div class="modal-body">
                             <div class="conteiner-fluid">
                                 <div class="row justify-content-center">
-                                    <div class="row col-10 align-items-center my-1">
+                                    <div class="row col-10 align-items-center my-1 p-0 w100">
                                         <i class="fas fa-angle-right"></i>
                                         <p class="ml-1 m-0 text-decoration-underline" role="button" data-toggle="collapse" data-target="#s1p1" style="cursor:pointer">Как делаем?</p>
                                         <p id="s1p1" class="collapse mx-3 my-0">Чтобы почистить салон вашего авто, мы держим в полной боевой готовности торнадоры,
@@ -1510,13 +1510,13 @@
                                             средств
                                         </p>
                                     </div>
-                                    <div class="row col-10 align-items-center my-1">
+                                    <div class="row col-10 align-items-center my-1 p-0">
                                         <i class="fas fa-angle-right"></i>
                                         <p class="ml-1 m-0 text-decoration-underline" role="button" data-toggle="collapse" data-target="#s1p2" style="cursor:pointer">Сколько времени длится комплексная химчистка?</p>
                                         <p id="s1p2" class="collapse mx-3 my-0">Химчистка занимает от 12 часов, все зависит от загрязнений! После химчистки вы сразу можете сеть за руль и
                                                 поехать по своим делам. Мокро не будет. Хорошее настроение прилагается.</p>
                                     </div>
-                                    <div class="row col-10 align-items-center my-1">
+                                    <div class="row col-10 align-items-center my-1 p-0">
                                         <i class="fas fa-angle-right"></i>
                                         <p class="ml-1 m-0 text-decoration-underline" role="button" data-toggle="collapse" data-target="#s1p3" style="cursor:pointer">Что входит в стоимость?</p>
                                         <p id="s1p3" class="collapse mx-3 my-0">Мы честно и открыто говорим, что в сезонную химчистку входит всё, кроме
@@ -1534,7 +1534,7 @@
                                             <div class="swiper-slide item">
                                                 <div class="him-slide-content p-5">
                                                     <h4>Химчистка полная</h4>
-                                                    <p>(Комплексная мойка в подарок)</p>
+                                                    <p class="text-danger alert p-0">(Комплексная мойка в подарок)</p>
                                                     <p>Цена: 4.600 руб.</p>
                                                     <button class="btn btn-primary order-btn" data-name="Химчиска полная">Добавить в корзину</button>
                                                 </div>
@@ -1647,7 +1647,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="modal-footer bg-dark"></div>
+                        <div class="modal-footer"></div>
                     </div>
                 </div>
             </div>

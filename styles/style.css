@@ -158,7 +158,28 @@ row {
 }
 
 .modal .service1 {
-    background-color: white;
+    background: rgba(11,32,51,1);
+background: -moz-radial-gradient(center, ellipse cover, rgba(11,32,51,1) 0%, rgba(11,32,51,0.98) 11%, rgba(11,32,51,1) 11%, rgba(11,32,51,1) 17%, rgba(2,10,18,1) 70%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(11,32,51,1)), color-stop(11%, rgba(11,32,51,0.98)), color-stop(11%, rgba(11,32,51,1)), color-stop(17%, rgba(11,32,51,1)), color-stop(70%, rgba(2,10,18,1)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(11,32,51,1) 0%, rgba(11,32,51,0.98) 11%, rgba(11,32,51,1) 11%, rgba(11,32,51,1) 17%, rgba(2,10,18,1) 70%);
+background: -o-radial-gradient(center, ellipse cover, rgba(11,32,51,1) 0%, rgba(11,32,51,0.98) 11%, rgba(11,32,51,1) 11%, rgba(11,32,51,1) 17%, rgba(2,10,18,1) 70%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(11,32,51,1) 0%, rgba(11,32,51,0.98) 11%, rgba(11,32,51,1) 11%, rgba(11,32,51,1) 17%, rgba(2,10,18,1) 70%);
+background: radial-gradient(ellipse at center, rgba(11,32,51,1) 0%, rgba(11,32,51,0.98) 11%, rgba(11,32,51,1) 11%, rgba(11,32,51,1) 17%, rgba(2,10,18,1) 70%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b2033', endColorstr='#020a12', GradientType=1 );
+
+color: white;
+}
+
+.modal-content, .modal-header, .modal-footer {
+    border: none !important;
+}
+
+.modal-header, .modal-footer {
+    background-color: #3A3C51 !important;
+}
+
+.modal-backdrop {
+    opacity: 0.75 !important;
 }
 
 #him {
@@ -169,10 +190,20 @@ row {
     height: 100%;
 }
 
-.him-items item{
-    border: 1px solid black;
-    height: 250px;
-    width: 250px;
+.him-items .item{
+    background-color: white;
+    color: black;
+    border: 10px solid transparent;
+border-image: 10 repeating-linear-gradient(45deg, #A7CECC, #A7CECC 10px, transparent 10px, transparent 20px, #F8463F 20px, #F8463F 30px,transparent 30px, transparent 40px);
+}
+
+.him-slide-content .btn {
+    height: 40px;
+    font-size: .8em;
+}
+
+.him-slide-content .alert {
+    font-size: .75em;
 }
 
 .him-slide-content{
@@ -287,7 +318,7 @@ row {
 }
 
 .header .menu{
-    background-color: rgb(15, 16, 17);
+    background-color: #030406;
     box-shadow: 0 0 10px rgba(255,255,255,0.75);
 }
 
