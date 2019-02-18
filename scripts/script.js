@@ -36,6 +36,8 @@ $(function () {
         },
     });
 
+    var polirSlider = $('#polirSlider');
+
     var himSwiper = new Swiper($("#him"), {
         slidesPerView: 3,
         spaceBetween: 50,
@@ -74,6 +76,18 @@ $(function () {
     $('#service1modal').on('shown.bs.modal', function () {
         himSwiper.update();
     })
+    $('#service2modal').on('shown.bs.modal', function () {
+        polirSlider.not('.slick-initialized').slick({
+        prevArrow: $('#service2modal .slider .swiper-button-prev-mine'),
+        nextArrow: $('#service2modal .slider .swiper-button-next-mine'),
+        fade: true,
+    });
+    })
+    
+    $('.collapse').on('show.bs.collapse', function (e) {
+        $('.collapse').collapse("hide")
+    })
+
     $('#formModal').on('shown.bs.modal',function(){
         $("#formModal #phone").mask('+7 (999) 999-99-99')
     })

@@ -1,9 +1,9 @@
-*:focus{
+*:focus {
     outline: none;
 }
 
-@media (max-width: 991.98px) { 
-    .header > .form, section > .form {
+@media (max-width: 991.98px) {
+    .header>.form, section>.form {
         height: 450px;
     }
     #map {
@@ -12,7 +12,7 @@
 }
 
 @media (min-width: 992px) {
-    .header > .form, section > .form{
+    .header>.form, section>.form {
         height: 200px;
     }
 }
@@ -31,8 +31,8 @@
     background-repeat: no-repeat;
 }
 
-#stocks .swiper-slide > .row{
-    background-color: rgba(0,0,0,0.8);
+#stocks .swiper-slide>.row {
+    background-color: rgba(0, 0, 0, 0.8);
     font-size: 20px;
 }
 
@@ -60,12 +60,12 @@
     cursor: pointer;
 }
 
-.timer > span {
+.timer>span {
     font-size: 45px;
     font-weight: bold;
 }
 
-.timer > div {
+.timer>div {
     font-size: 20px;
     text-align: center;
 }
@@ -79,7 +79,7 @@
     text-decoration: line-through;
 }
 
-.swiper-slide a{
+.swiper-slide a {
     background-color: #1B90A1;
     width: 150px;
     color: white;
@@ -89,26 +89,26 @@
     height: 475px;
     padding: 0;
     background-size: cover;
-    background-repeat: no-repeat;  
-    position: relative;  
+    background-repeat: no-repeat;
+    position: relative;
 }
 
-.services .service::before{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.7);  
-  z-index: 1;
+.services .service::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
 }
 
 .services .service .content {
     height: 100%;
     position: relative;
     padding: 150px 0 0 50px;
-    z-index: 2; 
+    z-index: 2;
     color: white;
     transition-duration: .5s;
 }
@@ -117,11 +117,12 @@
     width: 150px;
     border: 3px solid white;
 }
-.services .service:hover .content{
+
+.services .service:hover .content {
     opacity: 0;
 }
 
-.services .service > i {
+.services .service>i {
     display: block;
     position: absolute;
     top: 50%;
@@ -139,16 +140,17 @@
     cursor: pointer;
     z-index: 3;
 }
+
 .services .service:hover .icon-btn {
     opacity: 1;
 }
 
-.header > .form, section > .form {
-    box-shadow: 0 0 20px black inset; 
+.header>.form, section>.form {
+    box-shadow: 0 0 20px black inset;
     background-color: #030406;
 }
 
-.form > .text > h3 {
+.form>.text>h3 {
     color: white;
     text-align: center;
 }
@@ -157,17 +159,16 @@ row {
     width: 100%;
 }
 
-.modal .service1 {
-    background: rgba(11,32,51,1);
-background: -moz-radial-gradient(center, ellipse cover, rgba(11,32,51,1) 0%, rgba(11,32,51,0.98) 11%, rgba(11,32,51,1) 11%, rgba(11,32,51,1) 17%, rgba(2,10,18,1) 70%);
-background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(11,32,51,1)), color-stop(11%, rgba(11,32,51,0.98)), color-stop(11%, rgba(11,32,51,1)), color-stop(17%, rgba(11,32,51,1)), color-stop(70%, rgba(2,10,18,1)));
-background: -webkit-radial-gradient(center, ellipse cover, rgba(11,32,51,1) 0%, rgba(11,32,51,0.98) 11%, rgba(11,32,51,1) 11%, rgba(11,32,51,1) 17%, rgba(2,10,18,1) 70%);
-background: -o-radial-gradient(center, ellipse cover, rgba(11,32,51,1) 0%, rgba(11,32,51,0.98) 11%, rgba(11,32,51,1) 11%, rgba(11,32,51,1) 17%, rgba(2,10,18,1) 70%);
-background: -ms-radial-gradient(center, ellipse cover, rgba(11,32,51,1) 0%, rgba(11,32,51,0.98) 11%, rgba(11,32,51,1) 11%, rgba(11,32,51,1) 17%, rgba(2,10,18,1) 70%);
-background: radial-gradient(ellipse at center, rgba(11,32,51,1) 0%, rgba(11,32,51,0.98) 11%, rgba(11,32,51,1) 11%, rgba(11,32,51,1) 17%, rgba(2,10,18,1) 70%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b2033', endColorstr='#020a12', GradientType=1 );
-
-color: white;
+.modal .basketModal, .modal .formModal, .modal .service1, .modal .service2 {
+    background: rgba(11, 32, 51, 1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(11, 32, 51, 1) 0%, rgba(11, 32, 51, 0.98) 11%, rgba(11, 32, 51, 1) 11%, rgba(11, 32, 51, 1) 17%, rgba(2, 10, 18, 1) 70%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(11, 32, 51, 1)), color-stop(11%, rgba(11, 32, 51, 0.98)), color-stop(11%, rgba(11, 32, 51, 1)), color-stop(17%, rgba(11, 32, 51, 1)), color-stop(70%, rgba(2, 10, 18, 1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(11, 32, 51, 1) 0%, rgba(11, 32, 51, 0.98) 11%, rgba(11, 32, 51, 1) 11%, rgba(11, 32, 51, 1) 17%, rgba(2, 10, 18, 1) 70%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(11, 32, 51, 1) 0%, rgba(11, 32, 51, 0.98) 11%, rgba(11, 32, 51, 1) 11%, rgba(11, 32, 51, 1) 17%, rgba(2, 10, 18, 1) 70%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(11, 32, 51, 1) 0%, rgba(11, 32, 51, 0.98) 11%, rgba(11, 32, 51, 1) 11%, rgba(11, 32, 51, 1) 17%, rgba(2, 10, 18, 1) 70%);
+    background: radial-gradient(ellipse at center, rgba(11, 32, 51, 1) 0%, rgba(11, 32, 51, 0.98) 11%, rgba(11, 32, 51, 1) 11%, rgba(11, 32, 51, 1) 17%, rgba(2, 10, 18, 1) 70%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b2033', endColorstr='#020a12', GradientType=1);
+    color: white;
 }
 
 .modal-content, .modal-header, .modal-footer {
@@ -190,11 +191,12 @@ color: white;
     height: 100%;
 }
 
-.him-items .item{
+.him-items .item {
     background-color: white;
     color: black;
     border: 10px solid transparent;
-border-image: 10 repeating-linear-gradient(45deg, #A7CECC, #A7CECC 10px, transparent 10px, transparent 20px, #F8463F 20px, #F8463F 30px,transparent 30px, transparent 40px);
+    border-image: 10 repeating-linear-gradient(45deg, #A7CECC, #A7CECC 10px, transparent 10px, transparent 20px, #F8463F 20px, #F8463F 30px, transparent 30px, transparent 40px);
+    background-color: rgba(232, 252, 255, 1);
 }
 
 .him-slide-content .btn {
@@ -206,7 +208,7 @@ border-image: 10 repeating-linear-gradient(45deg, #A7CECC, #A7CECC 10px, transpa
     font-size: .75em;
 }
 
-.him-slide-content{
+.him-slide-content {
     border: 1px solid black;
     height: 100%;
 }
@@ -274,15 +276,16 @@ border-image: 10 repeating-linear-gradient(45deg, #A7CECC, #A7CECC 10px, transpa
     background-color: #030406;
     color: white;
 }
+
 /*
     background-color: rgb(15, 16, 17);
 */
 
-#photo-slider .img{
+#photo-slider .img {
     border: 5px solid black;
 }
 
-#photo-slider-nav .slide img{
+#photo-slider-nav .slide img {
     height: 100px;
     cursor: pointer;
     border: 1px solid black;
@@ -314,14 +317,12 @@ border-image: 10 repeating-linear-gradient(45deg, #A7CECC, #A7CECC 10px, transpa
     border-radius: 50%;
 }
 
-#basket li {
-}
+#basket li {}
 
-.header .menu{
+.header .menu {
     background-color: #030406;
-    box-shadow: 0 0 10px rgba(255,255,255,0.75);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.75);
 }
-
 
 .devices-block img, .stocks-slider .stock-slide-content {
     background-image: url('../resources/img/devices/btl.png');
@@ -331,7 +332,7 @@ border-image: 10 repeating-linear-gradient(45deg, #A7CECC, #A7CECC 10px, transpa
 }
 
 .stocks-slider {
-    background-color: rgba(0,0,0,1);
+    background-color: rgba(0, 0, 0, 1);
 }
 
 .about {
@@ -392,4 +393,52 @@ border-image: 10 repeating-linear-gradient(45deg, #A7CECC, #A7CECC 10px, transpa
 #stocks .slide3 {
     background-size: cover;
     background-position-x: 200px;
+}
+
+#service2modal .modal-body .panel a {
+    text-decoration: underline;
+    color: white;
+}
+
+.panel-title i {
+    font-size: 2em !important;
+}
+
+#polirSlider .slide .item {
+    margin: 1em;
+    min-height: 250px;
+    border: 3px solid white;
+    border-radius: 30px;
+}
+
+.modal-content hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.75);
+}
+
+.modal-content .lists {
+    min-height: 170px;
+}
+
+ol {
+    min-height: 150px;
+}
+
+@media (max-width:668px){
+    .modal-content {
+        font-size: 1em;
+    }
+
+    .modal-content h5 {
+        font-size: 1.25em !important;
+    }
+}
+
+@media (max-width:568px){
+    .modal-content {
+        font-size: 0.8em;
+    }
+}
+
+.pointer{
+    cursor: pointer;
 }
