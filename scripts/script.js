@@ -37,6 +37,7 @@ $(function () {
     });
 
     var polirSlider = $('#polirSlider');
+    var letherSlider = $('#letherSlider');
 
     var himSwiper = new Swiper($("#him"), {
         slidesPerView: 3,
@@ -83,7 +84,14 @@ $(function () {
         fade: true,
     });
     })
-    
+    $('#service5modal').on('shown.bs.modal', function(){
+        letherSlider.not('.slick-initialized').slick({
+        prevArrow: $('#service5modal .slider .swiper-button-prev-mine'),
+        nextArrow: $('#service5modal .slider .swiper-button-next-mine'),
+        fade: true,
+    })
+    });
+
     $('.collapse').on('show.bs.collapse', function (e) {
         $('.collapse').collapse("hide")
     })

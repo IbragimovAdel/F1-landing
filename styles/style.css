@@ -159,7 +159,7 @@ row {
     width: 100%;
 }
 
-.modal .basketModal, .modal .formModal, .modal .service1, .modal .service2 {
+.modal .basketModal, .modal .formModal, .modal .service1, .modal .service2, .modal .service3, .modal .service4, .modal .service5, .modal .service6, .modal .service7, .modal .service8 {
     background: rgba(11, 32, 51, 1);
     background: -moz-radial-gradient(center, ellipse cover, rgba(11, 32, 51, 1) 0%, rgba(11, 32, 51, 0.98) 11%, rgba(11, 32, 51, 1) 11%, rgba(11, 32, 51, 1) 17%, rgba(2, 10, 18, 1) 70%);
     background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(11, 32, 51, 1)), color-stop(11%, rgba(11, 32, 51, 0.98)), color-stop(11%, rgba(11, 32, 51, 1)), color-stop(17%, rgba(11, 32, 51, 1)), color-stop(70%, rgba(2, 10, 18, 1)));
@@ -395,7 +395,7 @@ row {
     background-position-x: 200px;
 }
 
-#service2modal .modal-body .panel a {
+.modal-body .panel a {
     text-decoration: underline;
     color: white;
 }
@@ -404,7 +404,7 @@ row {
     font-size: 2em !important;
 }
 
-#polirSlider .slide .item {
+.modal .slider .slide .item {
     margin: 1em;
     min-height: 250px;
     border: 3px solid white;
