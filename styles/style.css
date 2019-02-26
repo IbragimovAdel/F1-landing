@@ -442,3 +442,12 @@ ol {
 .pointer{
     cursor: pointer;
 }
+
+.card-body {
+    color: white;
+    background-color: rgba(14, 19, 33, .95);
+}
+
+.card-footer {
+    background-color: rgba(9, 12, 22, .95) !important;
+}
