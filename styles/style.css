@@ -159,18 +159,6 @@ row {
     width: 100%;
 }
 
-.modal .basketModal, .modal .formModal, .modal .service1, .modal .service2, .modal .service3, .modal .service4, .modal .service5, .modal .service6, .modal .service7, .modal .service8 {
-    background: rgba(11, 32, 51, 1);
-    background: -moz-radial-gradient(center, ellipse cover, rgba(11, 32, 51, 1) 0%, rgba(11, 32, 51, 0.98) 11%, rgba(11, 32, 51, 1) 11%, rgba(11, 32, 51, 1) 17%, rgba(2, 10, 18, 1) 70%);
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(11, 32, 51, 1)), color-stop(11%, rgba(11, 32, 51, 0.98)), color-stop(11%, rgba(11, 32, 51, 1)), color-stop(17%, rgba(11, 32, 51, 1)), color-stop(70%, rgba(2, 10, 18, 1)));
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(11, 32, 51, 1) 0%, rgba(11, 32, 51, 0.98) 11%, rgba(11, 32, 51, 1) 11%, rgba(11, 32, 51, 1) 17%, rgba(2, 10, 18, 1) 70%);
-    background: -o-radial-gradient(center, ellipse cover, rgba(11, 32, 51, 1) 0%, rgba(11, 32, 51, 0.98) 11%, rgba(11, 32, 51, 1) 11%, rgba(11, 32, 51, 1) 17%, rgba(2, 10, 18, 1) 70%);
-    background: -ms-radial-gradient(center, ellipse cover, rgba(11, 32, 51, 1) 0%, rgba(11, 32, 51, 0.98) 11%, rgba(11, 32, 51, 1) 11%, rgba(11, 32, 51, 1) 17%, rgba(2, 10, 18, 1) 70%);
-    background: radial-gradient(ellipse at center, rgba(11, 32, 51, 1) 0%, rgba(11, 32, 51, 0.98) 11%, rgba(11, 32, 51, 1) 11%, rgba(11, 32, 51, 1) 17%, rgba(2, 10, 18, 1) 70%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b2033', endColorstr='#020a12', GradientType=1);
-    color: white;
-}
-
 .modal-content, .modal-header, .modal-footer {
     border: none !important;
 }
@@ -441,11 +429,94 @@ ol {
     cursor: pointer;
 }
 
-.card-body {
+.modal-caseclean {
+    background-image: url('../resources/img/Modals/caseclean.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 650px;
+    font-family: 'Conv_6444';
+    background-color: #161616;
+}
+
+.modal-caseclean-header{
     color: white;
-    background-color: rgba(14, 19, 33, .95);
+    background-image: url('../resources/img/Modals/caseclean-header.png');
+    font-family: 'Conv_6444';
+}
+
+.modal-caseclean-header i {
+    color: white;
+}
+
+.modal-caseclean-header .text-title {
+    font-size: 2.5rem !important;
+}
+
+@media (max-width:668px){
+    .modal-caseclean {
+        background-size: 100%;
+    }
+    
+    .modal-caseclean-header .text-title {
+        font-size: 1rem !important;
+    }
+}
+
+.card {
+    border-radius: 0 0 1.5rem 1.5rem !important;
+    box-shadow: 0 0 20px black;
+}
+
+.card-body {
+    border-bottom: 3px solid black;
+}
+
+.more-info {
+    color: black;
+    text-decoration: underline;
+    font-size: .85rem;
+}
+
+.more-info:hover {
+    color: black;
 }
 
 .card-footer {
-    background-color: rgba(9, 12, 22, .95) !important;
+    height: 2.25rem;
+    border-radius: 0 0 1.5rem 1.5rem !important;
+}
+
+.sign-btn {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0 0 1.5rem 1.5rem !important;
+}
+
+.fw {
+    font-weight: bolder;
+    font-size: .9rem;
+}
+
+.first-card-block {
+    margin-top: 25%;
+}
+
+.sign-btn-1 {background-color: #9D9F9E};
+.sign-btn-2 {background-color: #727270};
+.sign-btn-3 {background-color: #898989};
+.sign-btn-4 {background-color: #9D9F9E};
+.sign-btn-5 {background-color: #C5C7C6};
+.sign-btn-6 {background-color: #5B5B5B};
+
+.modal .basketModal, .modal .formModal, .modal .service1, .modal .service2, .modal .service4, .modal .service5, .modal .service6, .modal .service7, .modal .service8 {
+    background: rgba(11, 32, 51, 1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(11, 32, 51, 1) 0%, rgba(11, 32, 51, 0.98) 11%, rgba(11, 32, 51, 1) 11%, rgba(11, 32, 51, 1) 17%, rgba(2, 10, 18, 1) 70%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(11, 32, 51, 1)), color-stop(11%, rgba(11, 32, 51, 0.98)), color-stop(11%, rgba(11, 32, 51, 1)), color-stop(17%, rgba(11, 32, 51, 1)), color-stop(70%, rgba(2, 10, 18, 1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(11, 32, 51, 1) 0%, rgba(11, 32, 51, 0.98) 11%, rgba(11, 32, 51, 1) 11%, rgba(11, 32, 51, 1) 17%, rgba(2, 10, 18, 1) 70%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(11, 32, 51, 1) 0%, rgba(11, 32, 51, 0.98) 11%, rgba(11, 32, 51, 1) 11%, rgba(11, 32, 51, 1) 17%, rgba(2, 10, 18, 1) 70%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(11, 32, 51, 1) 0%, rgba(11, 32, 51, 0.98) 11%, rgba(11, 32, 51, 1) 11%, rgba(11, 32, 51, 1) 17%, rgba(2, 10, 18, 1) 70%);
+    background: radial-gradient(ellipse at center, rgba(11, 32, 51, 1) 0%, rgba(11, 32, 51, 0.98) 11%, rgba(11, 32, 51, 1) 11%, rgba(11, 32, 51, 1) 17%, rgba(2, 10, 18, 1) 70%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b2033', endColorstr='#020a12', GradientType=1);
+    color: white;
 }
