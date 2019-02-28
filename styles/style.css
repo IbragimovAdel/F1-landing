@@ -473,8 +473,9 @@ ol {
 
 .more-info {
     color: black;
-    text-decoration: underline;
+    text-decoration: underline !important;
     font-size: .85rem;
+    cursor: pointer;
 }
 
 .more-info:hover {
@@ -500,6 +501,15 @@ ol {
 
 .first-card-block {
     margin-top: 25%;
+}
+
+.card-title {
+    font-size: 1rem;
+}
+
+.tooltip-inner {
+    max-width: 20rem !important;
+    width: 20rem;
 }
 
 .sign-btn-1 {background-color: #9D9F9E};

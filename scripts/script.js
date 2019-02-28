@@ -17,6 +17,8 @@ $(function () {
         return false;
     }
 
+    $('[data-toggle="tooltip"]').tooltip()
+
     var stockSwiper = new Swiper($("#stocks"), {
         slidesPerView: 1,
         spaceBetween: 0,
