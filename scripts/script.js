@@ -41,33 +41,6 @@ $(function () {
     var polirSlider = $('#polirSlider');
     var letherSlider = $('#letherSlider');
 
-    var himSwiper = new Swiper($("#him"), {
-        slidesPerView: 3,
-        spaceBetween: 50,
-        slidesPerGroup: 3,
-        pagination: {
-            el: '#him .swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.him-items .swiper-button-next-mine',
-            prevEl: '.him-items .swiper-button-prev-mine',
-        },
-        breakpoints: {
-            640: {
-                slidesPerView: 1,
-                slidesPerGroup: 1
-            },
-            800: {
-                slidesPerView: 1,
-                slidesPerGroup: 1
-            },
-            960: {
-                slidesPerView: 1,
-                slidesPerGroup: 1
-            }
-        }
-    });
 
     $('#timer').countdown("2019/03/01", function (e) {
         $('#timer .days').text(e.strftime('%w') * 7 + Number(e.strftime('%d')));
@@ -77,7 +50,6 @@ $(function () {
     });
 
     $('#service1modal').on('shown.bs.modal', function () {
-        himSwiper.update();
     })
     $('#service2modal').on('shown.bs.modal', function () {
         polirSlider.not('.slick-initialized').slick({

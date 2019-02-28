@@ -429,27 +429,39 @@ ol {
     cursor: pointer;
 }
 
-.modal-caseclean {
-    background-image: url('../resources/img/Modals/caseclean.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    min-height: 650px;
+.servicemodal {
     font-family: 'Conv_6444';
     background-color: #161616;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.servicemodalheader {
+    font-family: 'Conv_6444';
+    color: white;
+    background-image: url('../resources/img/Modals/caseclean-header.png');
+}
+.servicemodalheader i {
+    color: white;
+}
+
+.modal-caseclean {
+    background-image: url('../resources/img/Modals/caseclean.png');
+    min-height: 650px;
 }
 
 .modal-caseclean-header{
-    color: white;
-    background-image: url('../resources/img/Modals/caseclean-header.png');
-    font-family: 'Conv_6444';
-}
-
-.modal-caseclean-header i {
-    color: white;
 }
 
 .modal-caseclean-header .text-title {
     font-size: 2.5rem !important;
+}
+
+.modal-dryclean {
+    background-image: url('../resources/img/Modals/dryclean.png');
+}
+
+.modal-lapdefense {
+    background-image: url('../resources/img/Modals/lapdefense.png');
 }
 
 @media (max-width:668px){
@@ -461,7 +473,23 @@ ol {
         font-size: 1rem !important;
     }
 }
-
+@media (max-width: 814px){
+    .tooltip-inner {
+        max-width: 20rem !important;
+        width: 20rem;
+    }
+}
+@media (min-width: 815px){
+    .tooltip-inner {
+        max-width: 25rem !important;
+        width: 25rem;
+    }
+}
+@media (max-width: 668px){
+    .tooltip-inner {
+        font-size: .7rem;
+    }
+}
 .card {
     border-radius: 0 0 1.5rem 1.5rem !important;
     box-shadow: 0 0 20px black;
@@ -469,6 +497,7 @@ ol {
 
 .card-body {
     border-bottom: 3px solid black;
+    min-height: 147px;
 }
 
 .more-info {
@@ -508,9 +537,8 @@ ol {
 }
 
 .tooltip-inner {
-    max-width: 20rem !important;
-    width: 20rem;
 }
+
 
 .sign-btn-1 {background-color: #9D9F9E};
 .sign-btn-2 {background-color: #727270};

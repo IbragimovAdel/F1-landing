@@ -1495,168 +1495,250 @@
         <section class="modals">
             <!--HimModal-->
             <div class="modal fade" id="service1modal">
-                <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content service1">
-                        <div class="modal-header text-white">
+                        <div class="modal-header modal-caseclean-header servicemodalheader">
                             <div class="modal-title">
-                                <h3>Химчистка</h3>
+                                <h1 class="text-title">Химчистка</h1>
+                                <a class="more-info" data-toggle="tooltip" data-html="true" title="<h5>Чем делаем?</h5><p>Чтобы почистить салон вашего авто, мы держим в полной боевой готовности торнадоры, циклоны, вакуумные
+                                    экстракторы, озонаторы, парогенераторы и генераторы сухого тумана... а еще 10 килограмм чистых
+                                    микрофибровых полотенец и 30 видов моющих средств</p><h5>Сколько времени длится комплексная химчистка?</h5><p>Химчистка занимает от 12 часов, все зависит от загрязнений! После химчистки вы сразу можете сеть за руль и поехать по своим делам. Мокро не будет. Хорошее настроение прилагается.</p>
+                                    <h5>В чем подвох?</h5><p>Подвоха нет. Все почему-то привыкли искать подвох. Но у нас подвоха нет. Все честно.
+                                        Химчистка — полноценная, глубокая химчистка. Мы сражаемся до последнего пятнышка.
+                                        В каждую щель лезем кисточкой, мягкими щеточками, пробиваем паром… выбиваем пол
+                                        торнадором, собираем всю лишнюю влагу экстракторами.</p>">Подробная информация</a>
                             </div>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true" class="text-white">&times;</span>
+                                <i class="fas fa-times fa-1x"></i>
                             </button>
                         </div>
-                        <div class="modal-body">
-                            <div class="conteiner-fluid">
-                                <div class="row justify-content-center">
-                                    <div class="row col-10 align-items-center my-1 p-0 w100">
-                                        <i class="fas fa-angle-right"></i>
-                                        <p class="ml-1 m-0 text-decoration-underline" role="button" data-toggle="collapse" data-target="#s1p1" style="cursor:pointer">Как делаем?</p>
-                                        <p id="s1p1" class="collapse mx-3 my-0">Чтобы почистить салон вашего авто, мы держим в полной боевой готовности торнадоры,
-                                            циклоны, вакуумные экстракторы, озонаторы, парогенераторы и генераторы сухого
-                                            тумана... а еще 10 килограмм чистых микрофибровых полотенец и 30 видов моющих
-                                            средств
+                        <div class="modal-body modal-dryclean servicemodal">
+                            <div class="card-block row justify-content-center first-card-block">
+                                <div class="card text-left col-lg-3 col-md-4 col-sm-8 p-0 m-3">
+                                    <div class="card-body p-1">
+                                        <h5 class="card-title">
+                                            <b>Химчистка полная</b>
+                                        </h5>
+                                        <p class="card-text">
+                                            <p class="m-0 fw">Цена:
+                                                <b>6.000 руб.</b>
+                                            </p>
+                                            <p class="m-0 fw">Время:
+                                                <b></b>
+                                            </p>
+                                            <p class="m-0 fw text-danger">Комплексная мойка в подарок</p>
                                         </p>
                                     </div>
-                                    <div class="row col-10 align-items-center my-1 p-0">
-                                        <i class="fas fa-angle-right"></i>
-                                        <p class="ml-1 m-0 text-decoration-underline" role="button" data-toggle="collapse" data-target="#s1p2" style="cursor:pointer">Сколько времени длится комплексная химчистка?</p>
-                                        <p id="s1p2" class="collapse mx-3 my-0">Химчистка занимает от 12 часов, все зависит от загрязнений! После химчистки вы сразу
-                                            можете сеть за руль и поехать по своим делам. Мокро не будет. Хорошее настроение
-                                            прилагается.
-                                        </p>
-                                    </div>
-                                    <div class="row col-10 align-items-center my-1 p-0">
-                                        <i class="fas fa-angle-right"></i>
-                                        <p class="ml-1 m-0 text-decoration-underline" role="button" data-toggle="collapse" data-target="#s1p3" style="cursor:pointer">Что входит в стоимость?</p>
-                                        <p id="s1p3" class="collapse mx-3 my-0">Мы честно и открыто говорим, что в сезонную химчистку входит всё, кроме "Чистки и
-                                            защиты кожаного салона (с применение специальных составов)" - кожаные элементы
-                                            оплачиваются дополнительно. Кондиционеры кожи, пластика и защитные пропитки салона
-                                            заказываются отдельно. </p>
+                                    <div class="card-footer p-0">
+                                        <button class="sign-btn pointer sign-btn-1">Записаться</button>
                                     </div>
                                 </div>
-                                <div class="row him-items">
-                                    <div class="col-lg-1 d-none d-md-none d-lg-block swiper-button-prev-mine align-self-center">
-                                        <i class="fas fa-arrow-circle-left fa-3x float-right"></i>
+                                <div class="card text-left col-lg-3 col-md-4 col-sm-8 p-0 m-3">
+                                    <div class="card-body p-1">
+                                        <h5 class="card-title">
+                                            <b>"1" сиденье</b>
+                                        </h5>
+                                        <p class="card-text">
+                                            <p class="m-0 fw">Цена:
+                                                <b>500 руб.</b>
+                                            </p>
+                                            <p class="m-0 fw">Время:
+                                                <b></b>
+                                            </p>
+                                        </p>
                                     </div>
-                                    <div class="col-lg-10 swiper-container mt-5 row justify-content-center align-items-center" id="him">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide item">
-                                                <div class="him-slide-content p-5">
-                                                    <h4>Химчистка полная</h4>
-                                                    <p class="text-danger alert p-0">(Комплексная мойка в подарок)</p>
-                                                    <p>Цена: 4.600 руб.</p>
-                                                    <button class="btn btn-primary order-btn" data-name="Химчиска полная">Добавить в корзину</button>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide item">
-                                                <div class="him-slide-content p-5">
-                                                    <h4>1 сиденье</h4>
-                                                    <p>Цена: 500 руб.</p>
-                                                    <br>
-                                                    <br>
-                                                    <button class="btn btn-primary order-btn" data-name="Химчистка. 1 сиденье">Добавить в корзину</button>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide item">
-                                                <div class="him-slide-content p-5">
-                                                    <h4>4 сиденья</h4>
-                                                    <p>Цена: 1.500 руб.</p>
-                                                    <br>
-                                                    <br>
-                                                    <button class="btn btn-primary order-btn" data-name="Химчистка. 4 сиденья">Добавить в корзину</button>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide item">
-                                                <div class="him-slide-content p-5">
-                                                    <h4>Потолок</h4>
-                                                    <p>Цена: 2.000 руб.</p>
-                                                    <br>
-                                                    <br>
-                                                    <button class="btn btn-primary order-btn" data-name="Химчистка. Потолок">Добавить в корзину</button>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide item">
-                                                <div class="him-slide-content p-5">
-                                                    <h4>Пол</h4>
-                                                    <p>Цена: 2.000 руб.</p>
-                                                    <br>
-                                                    <br>
-                                                    <button class="btn btn-primary order-btn" data-name="Химчистка. Пол">Добавить в корзину</button>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide item">
-                                                <div class="him-slide-content p-5">
-                                                    <h4>Пол (1 место)</h4>
-                                                    <p>Цена: 500 руб.</p>
-                                                    <br>
-                                                    <br>
-                                                    <button class="btn btn-primary order-btn" data-name="Химчистка. Пол (1 место)">Добавить в корзину</button>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide item">
-                                                <div class="him-slide-content p-5">
-                                                    <h4>Дверь (1 шт.)</h4>
-                                                    <p>Цена: 250 руб.</p>
-                                                    <br>
-                                                    <br>
-                                                    <button class="btn btn-primary order-btn" data-name="Химчистка. Дверь (1 шт.)">Добавить в корзину</button>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide item">
-                                                <div class="him-slide-content p-5">
-                                                    <h4>Багажник</h4>
-                                                    <p>Цена: 800 руб.</p>
-                                                    <br>
-                                                    <br>
-                                                    <button class="btn btn-primary order-btn" data-name="Химчистка. Багажник">Добавить в корзину</button>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide item">
-                                                <div class="him-slide-content p-5">
-                                                    <h4>Детское кресло</h4>
-                                                    <p>Цена: 350 руб.</p>
-                                                    <br>
-                                                    <br>
-                                                    <button class="btn btn-primary order-btn" data-name="Химчистка. Детское кресло">Добавить в корзину</button>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide item">
-                                                <div class="him-slide-content p-5">
-                                                    <h4>Коврик</h4>
-                                                    <p>Цена: 50 руб.</p>
-                                                    <br>
-                                                    <br>
-                                                    <button class="btn btn-primary order-btn" data-name="Химчистка. Коврик">Добавить в корзину</button>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide item">
-                                                <div class="him-slide-content p-5">
-                                                    <h4>Сушка салона</h4>
-                                                    <p>Цена: 400 руб.</p>
-                                                    <br>
-                                                    <br>
-                                                    <button class="btn btn-primary order-btn" data-name="Химчистка. Сушка салона">Добавить в корзину</button>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide item">
-                                                <div class="him-slide-content p-5">
-                                                    <h5>Нано обработка обшивки сидений</h5>
-                                                    <p>Цена: 2.000 руб.</p>
-                                                    <br>
-                                                    <br>
-                                                    <button class="btn btn-primary order-btn" data-name="Химчистка. Нано обработка обшивки сидений">Добавить в корзину</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-pagination swiper-pagination"></div>
+                                    <div class="card-footer p-0">
+                                        <button class="sign-btn pointer sign-btn-2">Записаться</button>
                                     </div>
-                                    <div class="col-lg-1 d-none d-md-none d-lg-block swiper-button-next-mine align-self-center">
-                                        <i class="fas fa-arrow-circle-right fa-3x float-left"></i>
+                                </div>
+                                <div class="card text-left col-lg-3 col-md-4 col-sm-8 p-0 m-3">
+                                    <div class="card-body p-1">
+                                        <h5 class="card-title">
+                                            <b>"4" сиденья</b>
+                                        </h5>
+                                        <p class="card-text">
+                                            <p class="m-0 fw">Цена:
+                                                <b>1.500 руб.</b>
+                                            </p>
+                                            <p class="m-0 fw">Время:
+                                                <b></b>
+                                            </p>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <button class="sign-btn pointer sign-btn-3">Записаться</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-block row justify-content-center">
+                                <div class="card text-left col-lg-3 col-md-4 col-sm-8 p-0 m-3">
+                                    <div class="card-body p-1">
+                                        <h5 class="card-title">
+                                            <b>"Потолок"</b>
+                                        </h5>
+                                        <p class="card-text">
+                                            <p class="m-0 fw">Цена:
+                                                <b>2.000 руб.</b>
+                                                <p class="m-0 fw">Время:
+                                                    <b></b>
+                                                </p>
+                                            </p>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <button class="sign-btn pointer sign-btn-4">Записаться</button>
+                                    </div>
+                                </div>
+                                <div class="card text-left col-lg-3 col-md-4 col-sm-8 p-0 m-3">
+                                    <div class="card-body p-1">
+                                        <h5 class="card-title">
+                                            <b>"Пол"</b>
+                                        </h5>
+                                        <p class="card-text">
+                                            <p class="m-0 fw">Цена:
+                                                <b>2.000 руб.</b>
+                                                <p class="m-0 fw">Время:
+                                                    <b></b>
+                                                </p>
+                                            </p>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <button class="sign-btn pointer sign-btn-5">Записаться</button>
+                                    </div>
+                                </div>
+                                <div class="card text-left col-lg-3 col-md-4 col-sm-8 p-0 m-3">
+                                    <div class="card-body p-1">
+                                        <h5 class="card-title">
+                                            <b>"Пол" (1 место)</b>
+                                        </h5>
+                                        <p class="card-text">
+                                            <p class="m-0 fw">Цена:
+                                                <b>500 руб.</b>
+                                                <p class="m-0 fw">Время:
+                                                    <b></b>
+                                                </p>
+                                            </p>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <button class="sign-btn pointer sign-btn-6">Записаться</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-block row justify-content-center">
+                                <div class="card text-left col-lg-3 col-md-4 col-sm-8 p-0 m-3">
+                                    <div class="card-body p-1">
+                                        <h5 class="card-title">
+                                            <b>"Дверь" ( 1 шт. )</b>
+                                        </h5>
+                                        <p class="card-text">
+                                            <p class="m-0 fw">Цена:
+                                                <b>250 руб.</b>
+                                                <p class="m-0 fw">Время:
+                                                    <b></b>
+                                                </p>
+                                            </p>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <button class="sign-btn pointer sign-btn-4">Записаться</button>
+                                    </div>
+                                </div>
+                                <div class="card text-left col-lg-3 col-md-4 col-sm-8 p-0 m-3">
+                                    <div class="card-body p-1">
+                                        <h5 class="card-title">
+                                            <b>"Багажник"</b>
+                                        </h5>
+                                        <p class="card-text">
+                                            <p class="m-0 fw">Цена:
+                                                <b>800 руб.</b>
+                                                <p class="m-0 fw">Время:
+                                                    <b></b>
+                                                </p>
+                                            </p>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <button class="sign-btn pointer sign-btn-5">Записаться</button>
+                                    </div>
+                                </div>
+                                <div class="card text-left col-lg-3 col-md-4 col-sm-8 p-0 m-3">
+                                    <div class="card-body p-1">
+                                        <h5 class="card-title">
+                                            <b>"Детское кресло"</b>
+                                        </h5>
+                                        <p class="card-text">
+                                            <p class="m-0 fw">Цена:
+                                                <b>350 руб.</b>
+                                                <p class="m-0 fw">Время:
+                                                    <b></b>
+                                                </p>
+                                            </p>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <button class="sign-btn pointer sign-btn-6">Записаться</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-block row justify-content-center">
+                                <div class="card text-left col-lg-3 col-md-4 col-sm-8 p-0 m-3">
+                                    <div class="card-body p-1">
+                                        <h5 class="card-title">
+                                            <b>"Коврик"</b>
+                                        </h5>
+                                        <p class="card-text">
+                                            <p class="m-0 fw">Цена:
+                                                <b>50 руб.</b>
+                                                <p class="m-0 fw">Время:
+                                                    <b></b>
+                                                </p>
+                                            </p>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <button class="sign-btn pointer sign-btn-4">Записаться</button>
+                                    </div>
+                                </div>
+                                <div class="card text-left col-lg-3 col-md-4 col-sm-8 p-0 m-3">
+                                    <div class="card-body p-1">
+                                        <h5 class="card-title">
+                                            <b>"Сушка салона"</b>
+                                        </h5>
+                                        <p class="card-text">
+                                            <p class="m-0 fw">Цена:
+                                                <b>400 руб.</b>
+                                                <p class="m-0 fw">Время:
+                                                    <b></b>
+                                                </p>
+                                            </p>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <button class="sign-btn pointer sign-btn-5">Записаться</button>
+                                    </div>
+                                </div>
+                                <div class="card text-left col-lg-3 col-md-4 col-sm-8 p-0 m-3">
+                                    <div class="card-body p-1">
+                                        <h5 class="card-title">
+                                            <b>"Нано обработка обшивки сидений"</b>
+                                        </h5>
+                                        <p class="card-text">
+                                            <p class="m-0 fw">Цена:
+                                                <b>2.000 руб.</b>
+                                                <p class="m-0 fw">Время:
+                                                    <b></b>
+                                                </p>
+                                            </p>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <button class="sign-btn pointer sign-btn-6">Записаться</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="modal-footer"></div>
                     </div>
                 </div>
             </div>
@@ -1672,7 +1754,7 @@
                                 <span aria-hidden="true" class="text-white">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body servicemodal">
                             <div class="row lists">
                                 <div class="offset-1 info" id="info" role="tablist">
                                     <div class="panel panel-default">
@@ -1815,113 +1897,140 @@
             </div>
             <!--LetherAndPlastic-->
             <div class="modal fade" id="service5modal">
-                <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content service5">
-                        <div class="modal-header">
+                        <div class="modal-header modal-caseclean-header servicemodalheader">
                             <div class="modal-title">
-                                <h3>Чистка и защита кожи и пластика</h3>
+                                <h1 class="text-title">Чистка и защита кожи и пластика</h1>
                             </div>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true" class="text-white">&times;</span>
+                                <i class="fas fa-times fa-1x"></i>
                             </button>
                         </div>
-                        <div class="modal-body">
-                            <div class="row lists">
-                                <div class="offset-1 info" id="info" role="tablist">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading" role="tab" id="headingOne">
-                                            <h6 class="panel-title">
-                                                <div class="row">
-                                                    <div>
-                                                        <i class="far fa-check-circle fa-2x"></i>
-                                                        <a class="ml-2" data-toggle="collapse" data-parent="#info" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                            Чем делаем?
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </h6>
-                                        </div>
-                                        <div id="collapseOne" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="headingOne">
-                                            <ul class="devices-list">
-                                                <li class="devices-list-item">Продукция компании LeTech Великобритания – мировой лидер в производстве продукции
-                                                    по деликатному уходу за кожаными изделиями.</li>
-                                                <li class="devices-list-item">Компания KochChemie Германия. Состав разработан специально для безвредной,
-                                                    глубокой и профессиональной очистки пластиковых деталей интерьера Вашего
-                                                    авто. Придает пластику неповторимый насыщенный цвет. После нанесения
-                                                    создает защитный гидрофобный эффект.</li>
-                                            </ul>
-                                        </div>
+                        <div class="modal-body modal-lapdefense servicemodal">
+                            <div class="card-block row justify-content-center first-card-block">
+                                <div class="card text-left col-lg-3 col-md-4 col-sm-8 p-0 m-3">
+                                    <div class="card-body p-1">
+                                        <h5 class="card-title">
+                                            <b>Чистка и защита "Стандарт"</b>
+                                        </h5>
+                                        <p class="card-text">
+                                            <p class="m-0 fw">Время:
+                                                <b>не более 1 часа.</b>
+                                            </p>
+                                            <p class="m-0 fw">Цена:
+                                                <b>4.000 руб.</b>
+                                            </p>
+                                        </p>
+                                        <a class="more-info" data-toggle="tooltip" data-html="true" title="<h4>Чтов себя включает?</h4><p>В услугу входит чистка и защита кожи: сиденья, руль, подлокотники.<br>
+                                            Защита кожи на 2-3 месяца.</p><h4>Чем делаем?</h4><p>Продукция компании LeTech Великобритания – мировой лидер в производстве продукции по
+                                                деликатному уходу за кожаными изделиями.</p>">Подробная информация</a>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <button class="sign-btn pointer sign-btn-1">Записаться</button>
+                                    </div>
+                                </div>
+                                <div class="card text-left col-lg-3 col-md-4 col-sm-8 p-0 m-3">
+                                    <div class="card-body p-1">
+                                        <h5 class="card-title">
+                                            <b>Чистка и защита "Премиум"</b>
+                                        </h5>
+                                        <p class="card-text">
+                                            <p class="m-0 fw">Время:
+                                                <b>от 1,5 до 2 часов.</b>
+                                            </p>
+                                            <p class="m-0 fw">Цена:
+                                                <b>7.000 руб.</b>
+                                            </p>
+                                        </p>
+                                        <a class="more-info" data-toggle="tooltip" data-html="true" title="<h4>Чтов себя включает?</h4><p>В услугу входит чистка и защита кожи: сиденья, руль, подлокотники, панель, двери, все кожаные
+                                            вставки.<br>
+                                            Защита кожи на 2-3 месяца.</p><h4>Чем делаем?</h4><p>Продукция компании LeTech Великобритания – мировой лидер в производстве продукции по
+                                                деликатному уходу за кожаными изделиями.</p>">Подробная информация</a>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <button class="sign-btn pointer sign-btn-2">Записаться</button>
+                                    </div>
+                                </div>
+                                <div class="card text-left col-lg-3 col-md-4 col-sm-8 p-0 m-3">
+                                    <div class="card-body p-1">
+                                        <h5 class="card-title">
+                                            <b>Чистка и защита сиденья ( 1 шт. )</b>
+                                        </h5>
+                                        <p class="card-text">
+                                            <p class="m-0 fw">Время:
+                                                <b>20 мин.</b>
+                                            </p>
+                                            <p class="m-0 fw">Цена:
+                                                <b>1.000 руб.</b>
+                                            </p>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <button class="sign-btn pointer sign-btn-3">Записаться</button>
                                     </div>
                                 </div>
                             </div>
-                            <hr>
-                            <div class="row slider mx-auto justify-content-center">
-                                <div class="pointer col-lg-1 d-none d-md-none d-lg-block swiper-button-prev-mine align-self-center">
-                                    <i class="fas fa-arrow-circle-left fa-3x float-right"></i>
-                                </div>
-                                <div class="row col-lg-10 col-sm-12 p-0" id="letherSlider">
-                                    <div class="slide col-12 p-0">
-                                        <div class="item">
-                                            <div class="row">
-                                                <h5 class="w-100 text-center">Чистка и защита «Стандарт»</h5>
-                                            </div>
-                                            <div class="row mx-md-3 mx-sm-0">
-                                                <ol>
-                                                    <li>В услугу входит чистка и защита кожи: сиденья, руль, подлокотники.</li>
-                                                    <li>Защита кожи на 2-3 месяца.</li>
-                                                </ol>
-                                            </div>
-                                            <div class="row mx-5">Время выполнения:
-                                                <b class="ml-1">не более 1 часа</b>.</div>
-                                            <div class="row mx-5">Стоимость:
-                                                <b class="ml-1">4.000₽</b>.</div>
-                                        </div>
+                            <div class="card-block row justify-content-center">
+                                <div class="card text-left col-lg-3 col-md-4 col-sm-8 p-0 m-3">
+                                    <div class="card-body p-1">
+                                        <h5 class="card-title">
+                                            <b>Чистка и защита сиденья ( 4 шт. )</b>
+                                        </h5>
+                                        <p class="card-text">
+                                            <p class="m-0 fw">Время:
+                                                <b>не более 1 часа.</b>
+                                            </p>
+                                            <p class="m-0 fw">Цена:
+                                                <b>3.000 руб.</b>
+                                            </p>
+                                        </p>
                                     </div>
-                                    <div class="slide col-12 p-0">
-                                        <div class="item">
-                                            <div class="row">
-                                                <h5 class="w-100 text-center">Чистка и защита «Премиум»</h5>
-                                            </div>
-                                            <div class="row mx-md-3 mx-sm-0">
-                                                <ol>
-                                                    <li>В услугу входит чистка и защита кожи: сиденья, руль, подлокотники, панель,
-                                                        двери, все кожаные вставки. </li>
-                                                    <li>Защита кожи на 2-3 месяца.</li>
-                                                </ol>
-                                            </div>
-                                            <div class="row mx-5">Время выполнения:
-                                                <b class="ml-1">1.5 - 2 часа</b>.</div>
-                                            <div class="row mx-5">Стоимость:
-                                                <b class="ml-1">7.000₽</b>.</div>
-                                        </div>
-                                    </div>
-                                    <div class="slide col-12 p-0">
-                                        <div class="item">
-                                            <div class="row">
-                                                <h5 class="w-100 text-center">Чистка и защита элементов</h5>
-                                            </div>
-                                            <div class="row mx-md-3 mx-sm-0">
-                                                <ol>
-                                                    <li>Чистка и защита сиденья (1шт) – 1 000 руб.</li>
-                                                    <li>Чистка и защита сиденья (4шт) – 3 000 руб.</li>
-                                                    <li>Чистка и защита руля – 400 руб.</li>
-                                                    <li>Чистка и защита подлокотника – 250 руб.</li>
-                                                    <li>Чистка и защита пластика – 1 000 руб.</li>
-                                                </ol>
-                                            </div>
-                                            <div class="row mx-5">Время выполнения:
-                                                <b class="ml-1">от 10 минут до 1.5 часа</b>.</div>
-                                            <div class="row mx-5">Стоимость:
-                                                <b class="ml-1">от 250₽</b>.</div>
-                                        </div>
+                                    <div class="card-footer p-0">
+                                        <button class="sign-btn pointer sign-btn-4">Записаться</button>
                                     </div>
                                 </div>
-                                <div class="pointer col-lg-1 d-none d-md-none d-lg-block swiper-button-next-mine align-self-center">
-                                    <i class="fas fa-arrow-circle-right fa-3x float-left"></i>
+                                <div class="card text-left col-lg-3 col-md-4 col-sm-8 p-0 m-3">
+                                    <div class="card-body p-1">
+                                        <h5 class="card-title">
+                                            <b>Чистка и защита руля</b>
+                                        </h5>
+                                        <p class="card-text">
+                                            <p class="m-0 fw">Время:
+                                                <b>10 мин.</b>
+                                            </p>
+                                            <p class="m-0 fw">Цена:
+                                                <b>400 руб.</b>
+                                            </p>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <button class="sign-btn pointer sign-btn-5">Записаться</button>
+                                    </div>
+                                </div>
+                                <div class="card text-left col-lg-3 col-md-4 col-sm-8 p-0 m-3">
+                                    <div class="card-body p-1">
+                                        <h5 class="card-title">
+                                            <b>Чистка и защита пластика</b>
+                                        </h5>
+                                        <p class="card-text">
+                                            <p class="m-0 fw">Время:
+                                                <b>1 - 1,5 часа.</b>
+                                            </p>
+                                            <p class="m-0 fw">Цена:
+                                                <b>1.000 руб.</b>
+                                            </p>
+                                        </p>
+                                        <a class="more-info" data-toggle="tooltip" data-html="true" title="<h4>Чем делаем?</h4><p>Компания KochChemie Германия. Состав разработан специально для безвредной, глубокой и
+                                            профессиональной очистки пластиковых деталей интерьера Вашего авто. Придает пластику
+                                            неповторимый насыщенный цвет. После нанесения создает защитный гидрофобный эффект.</p>">Подробная информация</a>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <button class="sign-btn pointer sign-btn-6">Записаться</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="modal-footer"></div>
                     </div>
                 </div>
             </div>
@@ -1929,7 +2038,7 @@
             <div class="modal fade" id="service3modal">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content service3">
-                        <div class="modal-header modal-caseclean-header">
+                        <div class="modal-header modal-caseclean-header servicemodalheader">
                             <div class="modal-title">
                                 <h1 class="text-title">Чистка кузова</h1>
                             </div>
@@ -1937,14 +2046,20 @@
                                 <i class="fas fa-times fa-1x"></i>
                             </button>
                         </div>
-                        <div class="modal-body modal-caseclean">
+                        <div class="modal-body modal-caseclean servicemodal">
                             <div class="card-block row justify-content-center first-card-block">
                                 <div class="card text-left col-lg-3 col-md-4 col-sm-8 p-0 m-3">
                                     <div class="card-body p-1">
-                                        <h5 class="card-title"><b>Чистка кузова ( 1 эл. )</b></h5>
+                                        <h5 class="card-title">
+                                            <b>Чистка кузова ( 1 эл. )</b>
+                                        </h5>
                                         <p class="card-text">
-                                            <p class="m-0 fw">Время: <b>10-15 мин.</b></p>
-                                            <p class="m-0 fw">Цена: <b>150 руб.</b></p>
+                                            <p class="m-0 fw">Время:
+                                                <b>10-15 мин.</b>
+                                            </p>
+                                            <p class="m-0 fw">Цена:
+                                                <b>150 руб.</b>
+                                            </p>
                                         </p>
                                         <a class="more-info" data-toggle="tooltip" data-html="true" title="<h4>Чем делаем?</h4><ul><li>Антибитум от компании Meguiars</li><li>Обезжириватель</li><li>Очиститель следов ржавчины, налета</li><li>Глина компании KochChemie</li></ul>">Подробная информация</a>
                                     </div>
@@ -1954,10 +2069,16 @@
                                 </div>
                                 <div class="card text-left col-lg-3 col-md-4 col-sm-8 p-0 m-3">
                                     <div class="card-body p-1">
-                                        <h5 class="card-title"><b>Чистка кузова</b></h5>
+                                        <h5 class="card-title">
+                                            <b>Чистка кузова</b>
+                                        </h5>
                                         <p class="card-text">
-                                            <p class="m-0 fw">Время: <b>от 1 до 2 часов.</b></p>
-                                            <p class="m-0 fw">Цена: <b>1500 руб.</b></p>
+                                            <p class="m-0 fw">Время:
+                                                <b>от 1 до 2 часов.</b>
+                                            </p>
+                                            <p class="m-0 fw">Цена:
+                                                <b>1.500 руб.</b>
+                                            </p>
                                         </p>
                                         <a class="more-info" data-toggle="tooltip" data-html="true" title="<h4>Чем делаем?</h4><ul><li>Антибитум от компании Meguiars</li><li>Обезжириватель</li><li>Очиститель следов ржавчины, налета</li><li>Глина компании KochChemie</li></ul>">Подробная информация</a>
                                     </div>
@@ -1967,12 +2088,18 @@
                                 </div>
                                 <div class="card text-left col-lg-3 col-md-4 col-sm-8 p-0 m-3">
                                     <div class="card-body p-1">
-                                        <h5 class="card-title"><b>Чистка диска ( 1 шт. )</b></h5>
+                                        <h5 class="card-title">
+                                            <b>Чистка диска ( 1 шт. )</b>
+                                        </h5>
                                         <p class="card-text">
-                                            <p class="m-0 fw">Время: <b>20-30 мин.</b></p>
-                                            <p class="m-0 fw">Цена: <b>150 руб.</b></p>
+                                            <p class="m-0 fw">Время:
+                                                <b>20-30 мин.</b>
+                                            </p>
+                                            <p class="m-0 fw">Цена:
+                                                <b>150 руб.</b>
+                                            </p>
                                         </p>
-                                        <a class="more-info" data-toggle="tooltip" data-html="true" title="<h4>Чем делаем?</h4><ul><li>Антибитум от компании Meguiars</li><li>Обезжириватель</li><li>Очиститель следов ржавчины, налета</li><li>Глина компании KochChemie</li></ul>">Подробная информация</a>
+                                        <a class="more-info" data-toggle="tooltip" data-html="true" title="<h4>Чем делаем?</h4><ul><li>Профессиональное средство от компании KochChemie</li></ul>">Подробная информация</a>
                                     </div>
                                     <div class="card-footer p-0">
                                         <button class="sign-btn pointer sign-btn-3">Записаться</button>
@@ -1980,46 +2107,64 @@
                                 </div>
                             </div>
                             <div class="card-block row justify-content-center">
-                                    <div class="card text-left col-lg-3 col-md-4 col-sm-8 p-0 m-3">
-                                        <div class="card-body p-1">
-                                            <h5 class="card-title"><b>Удаление следов насекомых</b></h5>
-                                            <p class="card-text">
-                                                <p class="m-0 fw">Время: <b>5-10 мин.</b></p>
-                                                <p class="m-0 fw">Цена: <b>240 руб.</b></p>
+                                <div class="card text-left col-lg-3 col-md-4 col-sm-8 p-0 m-3">
+                                    <div class="card-body p-1">
+                                        <h5 class="card-title">
+                                            <b>Удаление следов насекомых</b>
+                                        </h5>
+                                        <p class="card-text">
+                                            <p class="m-0 fw">Время:
+                                                <b>5-10 мин.</b>
                                             </p>
-                                            <a class="more-info" data-toggle="tooltip" data-html="true" title="<h4>Чем делаем?</h4><ul><li>Антибитум от компании Meguiars</li><li>Обезжириватель</li><li>Очиститель следов ржавчины, налета</li><li>Глина компании KochChemie</li></ul>">Подробная информация</a>
-                                        </div>
-                                        <div class="card-footer p-0">
-                                            <button class="sign-btn pointer sign-btn-4">Записаться</button>
-                                        </div>
+                                            <p class="m-0 fw">Цена:
+                                                <b>240 руб.</b>
+                                            </p>
+                                        </p>
+                                        <a class="more-info" data-toggle="tooltip" data-html="true" title="<h4>Чем делаем?</h4><ul><li>Профессиональное средство от компании KochChemie</li></ul>">Подробная информация</a>
                                     </div>
-                                    <div class="card text-left col-lg-3 col-md-4 col-sm-8 p-0 m-3">
-                                        <div class="card-body p-1">
-                                            <h5 class="card-title"><b>Чистка хрома ( 1 эл. )</b></h5>
-                                            <p class="card-text">
-                                                <p class="m-0 fw">Время: <b>20-30 мин.</b></p>
-                                                <p class="m-0 fw">Цена: <b>100 руб.</b></p>
-                                            </p>
-                                            <a class="more-info" data-toggle="tooltip" data-html="true" title="<h4>Чем делаем?</h4><ul><li>Антибитум от компании Meguiars</li><li>Обезжириватель</li><li>Очиститель следов ржавчины, налета</li><li>Глина компании KochChemie</li></ul>">Подробная информация</a>
-                                        </div>
-                                        <div class="card-footer p-0">
-                                            <button class="sign-btn pointer sign-btn-5">Записаться</button>
-                                        </div>
-                                    </div>
-                                    <div class="card text-left col-lg-3 col-md-4 col-sm-8 p-0 m-3">
-                                        <div class="card-body p-1">
-                                            <h5 class="card-title"><b>Чистка хрома</b></h5>
-                                            <p class="card-text">
-                                                <p class="m-0 fw">Время: <b>20-30 мин.</b></p>
-                                                <p class="m-0 fw">Цена: <b>1000 руб.</b></p>
-                                            </p>
-                                            <a class="more-info" data-toggle="tooltip" data-html="true" title="<h4>Чем делаем?</h4><ul><li>Антибитум от компании Meguiars</li><li>Обезжириватель</li><li>Очиститель следов ржавчины, налета</li><li>Глина компании KochChemie</li></ul>">Подробная информация</a>
-                                        </div>
-                                        <div class="card-footer p-0">
-                                            <button class="sign-btn pointer sign-btn-6">Записаться</button>
-                                        </div>
+                                    <div class="card-footer p-0">
+                                        <button class="sign-btn pointer sign-btn-4">Записаться</button>
                                     </div>
                                 </div>
+                                <div class="card text-left col-lg-3 col-md-4 col-sm-8 p-0 m-3">
+                                    <div class="card-body p-1">
+                                        <h5 class="card-title">
+                                            <b>Чистка хрома ( 1 эл. )</b>
+                                        </h5>
+                                        <p class="card-text">
+                                            <p class="m-0 fw">Время:
+                                                <b>20-30 мин.</b>
+                                            </p>
+                                            <p class="m-0 fw">Цена:
+                                                <b>100 руб.</b>
+                                            </p>
+                                        </p>
+                                        <a class="more-info" data-toggle="tooltip" data-html="true" title="<h4>Чем делаем?</h4><ul><li>Профессиональное средство от компании KochChemie</li></ul>">Подробная информация</a>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <button class="sign-btn pointer sign-btn-5">Записаться</button>
+                                    </div>
+                                </div>
+                                <div class="card text-left col-lg-3 col-md-4 col-sm-8 p-0 m-3">
+                                    <div class="card-body p-1">
+                                        <h5 class="card-title">
+                                            <b>Чистка хрома</b>
+                                        </h5>
+                                        <p class="card-text">
+                                            <p class="m-0 fw">Время:
+                                                <b>20-30 мин.</b>
+                                            </p>
+                                            <p class="m-0 fw">Цена:
+                                                <b>1.000 руб.</b>
+                                            </p>
+                                        </p>
+                                        <a class="more-info" data-toggle="tooltip" data-html="true" title="<h4>Чем делаем?</h4><ul><li>Профессиональное средство от компании KochChemie</li></ul>">Подробная информация</a>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <button class="sign-btn pointer sign-btn-6">Записаться</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
