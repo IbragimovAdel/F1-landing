@@ -11,7 +11,7 @@ $(function () {
         sliding(id);
     })
 
-    function sliding(id){
+    function sliding(id) {
         var top = $(id).offset().top;
         $('html,body').animate({ scrollTop: top }, 750);
         return false;
@@ -38,10 +38,6 @@ $(function () {
         },
     });
 
-    var polirSlider = $('#polirSlider');
-    var letherSlider = $('#letherSlider');
-
-
     $('#timer').countdown("2019/03/01", function (e) {
         $('#timer .days').text(e.strftime('%w') * 7 + Number(e.strftime('%d')));
         $('#timer .hrs').text(e.strftime('%H'));
@@ -52,25 +48,15 @@ $(function () {
     $('#service1modal').on('shown.bs.modal', function () {
     })
     $('#service2modal').on('shown.bs.modal', function () {
-        polirSlider.not('.slick-initialized').slick({
-        prevArrow: $('#service2modal .slider .swiper-button-prev-mine'),
-        nextArrow: $('#service2modal .slider .swiper-button-next-mine'),
-        fade: true,
     });
-    })
-    $('#service5modal').on('shown.bs.modal', function(){
-        letherSlider.not('.slick-initialized').slick({
-        prevArrow: $('#service5modal .slider .swiper-button-prev-mine'),
-        nextArrow: $('#service5modal .slider .swiper-button-next-mine'),
-        fade: true,
-    })
+    $('#service5modal').on('shown.bs.modal', function () {
     });
 
     $('.collapse').on('show.bs.collapse', function (e) {
         $('.collapse').collapse("hide")
     })
 
-    $('#formModal').on('shown.bs.modal',function(){
+    $('#formModal').on('shown.bs.modal', function () {
         $("#formModal #phone").mask('+7 (999) 999-99-99')
     })
 
@@ -135,7 +121,7 @@ $(function () {
     $(".order-btn").on('click', function () {
         var name = $(this).data('name')
         order.push(name)
-        if($(this).attr('class').includes('order-btn')) alert("Успешно добавлено в корзину")
+        if ($(this).attr('class').includes('order-btn')) alert("Успешно добавлено в корзину")
 
         var deleteBtn = $("<i class=\"fas fa-minus mx-3 p-1 basketDeleteBtn\">")
 
@@ -146,25 +132,25 @@ $(function () {
 
         $(".basketDeleteBtn").off();
 
-        if(size==0) $('#basketOrderBtn').prop('disabled',false)
+        if (size == 0) $('#basketOrderBtn').prop('disabled', false)
         size++
 
         $(".basketDeleteBtn").on('click', function () {
             if (size == 1) {
                 order.pop();
                 $(this).parent().remove();
-                $('#basketOrderBtn').prop('disabled',true)
+                $('#basketOrderBtn').prop('disabled', true)
                 size--
             }
             else {
-                order.splice(order.indexOf($(this).prev().text()),1)
+                order.splice(order.indexOf($(this).prev().text()), 1)
                 $(this).parent().remove();
                 size--
             }
         });
     })
 
-    $("#basketOrderBtn").on('click',function(){
+    $("#basketOrderBtn").on('click', function () {
     })
 
     ymaps.ready(init);
@@ -181,11 +167,11 @@ $(function () {
         map.geoObjects.add(mark);
     }
 
-    $('form').on('submit',function(e){
+    $('form').on('submit', function (e) {
         $(this).find("#order-input").val(order.toString());
     })
 
-    $('#basketOrderBtn').on('click',function(){
+    $('#basketOrderBtn').on('click', function () {
         $('#basketModal').modal('hide');
         sliding("#form");
     })
