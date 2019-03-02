@@ -449,9 +449,6 @@ ol {
     min-height: 650px;
 }
 
-.modal-caseclean-header{
-}
-
 .modal-caseclean-header .text-title {
     font-size: 2.5rem !important;
 }
@@ -462,6 +459,26 @@ ol {
 
 .modal-lapdefense {
     background-image: url('../resources/img/Modals/lapdefense.png');
+}
+
+.modal-polir {
+    background-image: url('../resources/img/Modals/polir.png');
+}
+
+.modal-antirain {
+    background-image: url('../resources/img/Modals/antirain.png');
+}
+
+.modal-addserv {
+    background-image: url('../resources/img/Modals/addserv.png');
+}
+
+.modal-ceramic {
+    background-image: url('../resources/img/Modals/ceramic.png');
+}
+
+.modal-lkpdefense {
+    background-image: url('../resources/img/Modals/lpkdefense.png');
 }
 
 @media (max-width:668px){
