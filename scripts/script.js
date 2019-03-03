@@ -38,7 +38,7 @@ $(function () {
         },
     });
 
-    $('#timer').countdown("2019/03/01", function (e) {
+    $('#timer').countdown("2019/04/01", function (e) {
         $('#timer .days').text(e.strftime('%w') * 7 + Number(e.strftime('%d')));
         $('#timer .hrs').text(e.strftime('%H'));
         $('#timer .mins').text(e.strftime('%M'));
@@ -115,42 +115,24 @@ $(function () {
         ]
     });
 
-    var basket = $('#basket')
-    var order = []
-    var size = 0
-    $(".order-btn").on('click', function () {
-        var name = $(this).data('name')
-        order.push(name)
-        if ($(this).attr('class').includes('order-btn')) alert("Успешно добавлено в корзину")
-
-        var deleteBtn = $("<i class=\"fas fa-minus mx-3 p-1 basketDeleteBtn\">")
-
-        var res = $("<li class=\"my-3\">");
-        res.append("<span>" + name + "</span>");
-        res.append(deleteBtn);
-        basket.append(res);
-
-        $(".basketDeleteBtn").off();
-
-        if (size == 0) $('#basketOrderBtn').prop('disabled', false)
-        size++
-
-        $(".basketDeleteBtn").on('click', function () {
-            if (size == 1) {
-                order.pop();
-                $(this).parent().remove();
-                $('#basketOrderBtn').prop('disabled', true)
-                size--
-            }
-            else {
-                order.splice(order.indexOf($(this).prev().text()), 1)
-                $(this).parent().remove();
-                size--
-            }
-        });
+    var currentModal = undefined;
+    $('.modal').on('shown.bs.modal',function(){
+        currentModal = $(this);
     })
 
-    $("#basketOrderBtn").on('click', function () {
+    var order = '';
+    $('.sign-btn').on('click',function(){
+        order = $(this).parent().parent().parent().parent().parent().find('.modal-title').find('.text-title').text()+'. '+$(this).parent().parent().find('.card-title').find('b').text().toString();
+        currentModal.modal('hide');
+        $('#formModal').modal('show');
+    })
+    $('.stock-btn').on('click',function(){
+        order = 'Акция. '+$(this).parent().parent().parent().find('h1').text();
+    })
+    $('#form2,#main-form,#modalform').submit(function(e){
+        var form = $(this).parent()
+        if(form.attr('id')==='main-form' || form.attr('id')==='form2') order = 'Консультация'
+        form.find("order-input").val(order);
     })
 
     ymaps.ready(init);
@@ -168,12 +150,7 @@ $(function () {
     }
 
     $('form').on('submit', function (e) {
-        $(this).find("#order-input").val(order.toString());
-    })
-
-    $('#basketOrderBtn').on('click', function () {
-        $('#basketModal').modal('hide');
-        sliding("#form");
+        $(this).find("#order-input").val(order);
     })
 
     $("#phone").mask('+7 (999) 999-99-99')

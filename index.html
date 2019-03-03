@@ -4,7 +4,12 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Ф1 детейлинг - химчистка">
+    <meta name="keywords" content="Ф1 детейлинг - химчистка ">
+
     <title>Первая скоростная автомойка Ф1</title>
+    <link rel="shortcut icon" href="./resources/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
@@ -55,9 +60,6 @@
                                 <a href="#devices" class="nav-link px-3 text-center">Средства</a>
                             </li>
                         </ul>
-                        <span class="navbar-text row justify-content-center align-items-center basket" style="color: white; display: block">
-                            <i class="fas fa-shopping-basket fa-3x col-12 text-center" data-toggle="modal" data-target="#basketModal"></i>
-                        </span>
                         <span class="navbar-text row justify-content-center align-items-center" style="color: white; display: block">
                             <div class="row justify-content-center align-items-center mb-1">
                                 <a href="https://www.instagram.com/f1kazan_rf/" target="_blank">
@@ -2309,7 +2311,7 @@
                     <div class="modal-content service6">
                         <div class="modal-header modal-caseclean-header servicemodalheader">
                             <div class="modal-title">
-                                <h1 class="text-title">Чистка кузова</h1>
+                                <h1 class="text-title">Керамика кузова/салона</h1>
                                 <a class="more-info" data-toggle="tooltip" data-html="true" title="<p class='text-left'>Под термином «защитная обработка салона автомобиля» подразумевается
                                     профессиональная обработка большинства элементов специальном химическим
                                     составом, образующим на поверхности незаметную для человеческого глаза
@@ -2629,35 +2631,6 @@
                     </div>
                 </div>
             </div>
-            <!--BasketModal-->
-            <div class="modal fade" id="basketModal">
-                <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
-                    <div class="modal-content basketModal">
-                        <div class="modal-header text-white">
-                            <div class="modal-title">
-                                <h3 class="text-center">Корзина</h3>
-                            </div>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true" class="text-white">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="conteiner-fluid">
-                                <div class="row">
-                                    <h6 class="col-12 text-center">Вы выбрали:</h6>
-                                </div>
-                                <div class="row">
-                                    <ul id="basket">
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-light" disabled id="basketOrderBtn">Оставить заявку</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <!--FormModal-->
             <div class="modal fade" id="formModal">
                 <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
@@ -2672,7 +2645,7 @@
                         </div>
                         <div class="modal-body">
                             <div class="conteiner-fluid">
-                                <form action="./php/sendMessage.php" method="POST" class="p-0 row col-12 justify-content-center m-auto" id="main-form">
+                                <form action="./php/sendMessage.php" method="POST" class="p-0 row col-12 justify-content-center m-auto" id="modalform">
                                     <div class="row col-12 justify-content-center p-0">
                                         <div class="row my-3 w-100">
                                             <input type="text" class="form-control" placeholder="Ваше имя" id="name" name="user_name" required>

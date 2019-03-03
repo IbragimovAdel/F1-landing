@@ -279,11 +279,6 @@ row {
     border: 1px solid black;
 }
 
-.header .basket:hover {
-    cursor: pointer;
-    transform: rotate(10deg);
-}
-
 #map {
     height: 500px;
     border: 1px solid white;
@@ -297,15 +292,6 @@ row {
 .address {
     font-size: 30px;
 }
-
-#basket li i {
-    float: right;
-    cursor: pointer;
-    border: 1px solid black;
-    border-radius: 50%;
-}
-
-#basket li {}
 
 .header .menu {
     background-color: #030406;
