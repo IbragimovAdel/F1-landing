@@ -2635,15 +2635,15 @@
             <div class="modal fade" id="formModal">
                 <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
                     <div class="modal-content formModal">
-                        <div class="modal-header text-white">
+                        <div class="modal-header modal-caseclean-header servicemodalheader text-white">
                             <div class="modal-title">
                                 <h3 class="text-center">Запись</h3>
                             </div>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true" class="text-white">&times;</span>
+                                <i class="fas fa-times fa-1x"></i>
                             </button>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body modal-form servicemodal">
                             <div class="conteiner-fluid">
                                 <form action="./php/sendMessage.php" method="POST" class="p-0 row col-12 justify-content-center m-auto" id="modalform">
                                     <div class="row col-12 justify-content-center p-0">
@@ -2657,7 +2657,7 @@
                                             <input type="text" class="form-control" placeholder="Марка вашего автомобиля" name="user_carmodel" id="model" required>
                                         </div>
                                         <div class="row my-3">
-                                            <button type="submit" class="btn btn-primary">Проконсультироваться</button>
+                                            <button type="submit" class="pointer form-btn sign-btn-2">Проконсультироваться</button>
                                         </div>
                                         <input type="hidden" name="order" value="Акция." id="order-input">
                                     </div>

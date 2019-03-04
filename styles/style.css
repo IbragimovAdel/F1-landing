@@ -526,6 +526,17 @@ ol {
     border-radius: 0 0 1.5rem 1.5rem !important;
 }
 
+.form-btn {
+    border-radius: 2rem;
+    height: 2.5rem;
+    box-shadow: 0 0 20px white;
+    transition-duration: .5s;
+}
+
+.form-btn:hover {
+    box-shadow: none;
+}
+
 .fw {
     font-weight: bolder;
     font-size: .9rem;
