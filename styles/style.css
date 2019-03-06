@@ -609,6 +609,18 @@ ol {
     background-size: cover;
 }
 
+.footer a {
+    color: white;
+}
+
+.footer a:hover {
+    color: white;
+}
+
+.footer-text {
+    color: rgba(255,255,255,0.75);
+}
+
 .sign-btn {background-color: #727271};
 .sign-btn-1 {background-color: #565655};
 .sign-btn-2 {background-color: #565655};
