@@ -567,6 +567,11 @@ ol {
     height: 100%;
     border: none;
     border-radius: 0 0 1.25rem 1.25rem !important;
+    box-shadow: inset 3px 3px 20px black;
+}
+
+.sign-btn:hover {
+    box-shadow: none;
 }
 
 .form-btn {
